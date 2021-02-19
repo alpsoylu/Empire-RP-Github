@@ -1,0 +1,32 @@
+
+state={
+	id=423
+	name="STATE_423"
+	resources={
+		rubber=19.000
+	}
+
+	history={
+		owner = MDR
+		buildings = {
+			infrastructure = 5
+			industrial_complex = 1
+			7265 = {
+				naval_base = 4
+
+			}
+
+		}
+		victory_points = {
+			12247 10
+		}
+
+	}
+
+	provinces={
+		1409 4327 4416 7265 7288 7363 10130 10274 12247 12275 
+	}
+	manpower=11147500
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

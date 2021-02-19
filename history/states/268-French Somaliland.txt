@@ -1,0 +1,20 @@
+
+state={
+	id=268
+	name="STATE_268"
+
+	history={
+		owner = DJI
+		buildings = {
+			infrastructure = 1
+		}
+		add_core_of = DJI
+	}
+
+	provinces={
+		7980 8036 8124 12714 
+	}
+	manpower=85232
+	buildings_max_level_factor=1.000
+	state_category=enclave
+}

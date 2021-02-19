@@ -1,0 +1,741 @@
+﻿###########################
+# Spanish Events
+###########################
+
+add_namespace = spain
+
+# Death of Carlos II
+country_event = {
+	id = spain.1
+	title = spain.1.t
+	desc = spain.1.d
+	picture = GFX_report_event_charles_II
+
+	
+	fire_only_once = yes
+	trigger = {
+		tag = SPR
+		AND = {
+			date > 1700.11.1	
+			}
+	}
+	mean_time_to_happen = {
+   		days = 1
+	}
+	option = {
+		custom_effect_tooltip = france.20.a_tt
+		set_country_flag = france_de_gaulle
+		hidden_effect =  {
+			create_country_leader = {
+				name = "Regency"
+				desc = "POLITICS_CHARLES_DE_GAULLE_DESC"
+				picture = "regency.dds"
+				expire = "1965.1.1"
+				ideology = despotism
+				traits = {	
+				}
+			}
+		set_global_flag = SPR_Carlos_is_dead
+		}
+		hidden_effect = {
+			add_threat = 10
+			news_event = { id = mod.1 days = 1 }
+		}
+		
+		name = spain.1.a
+	}
+}
+
+#Aragonese Revolt
+
+country_event = {
+	id = spain.3
+	title = spain.3.t
+	desc = spain.3.d
+	picture = GFX_report_event_degaulle_churchill
+
+	
+	fire_only_once = yes
+		trigger = {
+			tag = SPR
+			has_war_with = ENG
+		}
+	mean_time_to_happen = {
+    days = 700
+		}
+
+	option = {
+		name = traitors
+
+		#hidden_effect = { news_event = { id = mod.7 days = 1 }
+		#}
+
+		165 = {
+			add_core_of = ARA
+		}
+		166 = {
+			add_core_of = ARA
+		}
+		177 = {
+			add_core_of = ARA
+		}
+		167 = {
+			add_core_of = ARA
+		}
+
+		ARA = { 
+		transfer_state = 165
+		transfer_state = 167
+		}
+
+		ARA = {
+		load_oob = "ARA_revolt"
+		}
+	}
+}
+
+#Aragon Declare war
+
+country_event = {
+	id = spain.4
+	title = spain.4.t
+	desc = spain.4.d
+	picture = GFX_report_event_degaulle_churchill
+
+	mean_time_to_happen = { days = 14 } 
+
+	fire_only_once = yes
+		trigger = {
+			tag = SPR
+			country_exists = ARA
+		}
+
+	option = {
+	declare_war_on = {
+			target = ARA
+			type = annex_everything
+		}
+	}
+}
+
+# POPE Blessing
+country_event = {
+	id = spain.5
+	title = spain.5.t
+	desc = spain.5.d
+	picture = GFX_report_event_degaulle_churchill 
+
+	is_triggered_only = yes
+
+	option = {
+		name = spain.5.a
+		SPR = { country_event = spain.7 }
+	}
+	option = {
+		name = spain.5.b
+		SPR = { country_event = spain.8 }
+	}
+}
+
+#advisorswitch?
+
+country_event = {
+	id = spain.6
+	title = spain.6.t
+	desc = spain.6.d
+	picture = GFX_report_event_degaulle_churchill 
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = spain.6.a
+		add_political_power = 50
+		FRA = { add_to_variable = { var = ger_gateway_to_europe_influence value = 5 } }
+		set_variable = { var = ger_temp_trade_influence value = FRA.ger_gateway_to_europe_influence }
+		subtract_from_variable = { var = ger_temp_trade_influence value = AUS.eng_gateway_to_europe_influence }
+		set_variable = { var = eng_temp_trade_influence value = AUS.eng_gateway_to_europe_influence }
+		subtract_from_variable = { var = eng_temp_trade_influence value = FRA.ger_gateway_to_europe_influence }
+		add_to_variable = { var = gateway_to_europe_influence_pp_total value = 10 }
+		ai_chance = {
+			factor = 25
+			modifier = {
+				factor = 2
+				has_opinion = {
+					target = AUS
+					value > 49
+				}
+			}
+			modifier = {
+				factor = 4000
+				ENG = { has_completed_focus = eng_go_with_the_tories }
+			}
+		}
+		
+	}
+	option = {
+		name = spain.6.b
+		swap_ideas = {
+		    remove_idea = maria_anna
+		    add_idea = cardinal_portocarrero 
+		}
+		AUS = { add_to_variable = { var = eng_gateway_to_europe_influence value = 5 } }
+		set_variable = { var = eng_temp_trade_influence value = AUS.eng_gateway_to_europe_influence }
+		subtract_from_variable = { var = eng_temp_trade_influence value = FRA.ger_gateway_to_europe_influence }
+		set_variable = { var = ger_temp_trade_influence value = FRA.ger_gateway_to_europe_influence }
+		subtract_from_variable = { var = ger_temp_trade_influence value = AUS.eng_gateway_to_europe_influence }
+		add_to_variable = { var = gateway_to_europe_influence_pp_total value = 10 }
+		
+		ai_chance = {
+			factor = 75
+			modifier = {
+				factor = 0.5
+				has_opinion = {
+					target = FRA
+					value < 0
+				}
+			}
+		}
+	}
+}
+
+#Good news pope
+
+country_event = {
+	id = spain.7
+	title = spain.7.t
+	desc = spain.7.d
+	picture = GFX_report_event_degaulle_churchill
+ 	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = {
+		name = spain.7.a
+		add_political_power = 150
+	}
+}
+
+#Bad news pope
+
+country_event = {
+	id = spain.8
+	title = spain.8.t
+	desc = spain.8.d
+	picture = GFX_report_event_degaulle_churchill
+ 	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = {
+		name = spain.8.a
+		add_political_power = -50 
+	}
+}
+
+# Influence Spanish court; notification event of AUS faction leading
+
+country_event = {
+	id = spain.9
+	title = spain.9.t
+	desc = {
+		text = spain.9.d.a
+		trigger = {
+			original_tag = SPR
+		}
+	}
+	desc = {
+		text = spain.9.d.b
+		trigger = {
+			original_tag = FRA
+		}
+	}
+	picture = GFX_report_event_royal_court
+
+	is_triggered_only = yes
+	
+	# Ok
+	option = {
+		name = "Ok."
+		trigger = {
+			original_tag = SPR
+		}
+	}
+
+	# Ok
+	option = {
+		name = "Ok."
+		trigger = {
+			original_tag = FRA
+		}
+	}
+}
+
+# Influence Spanish court; notification event of FRA faction leading
+
+country_event = {
+	id = spain.10
+	title = spain.10.t
+	desc = {
+		text = spain.10.d.a
+		trigger = {
+			original_tag = SPR
+		}
+	}
+	desc = {
+		text = spain.10.d.b
+		trigger = {
+			original_tag = AUS
+		}
+	}
+	picture = GFX_report_event_royal_court
+
+	is_triggered_only = yes
+	
+	# Ok
+	option = {
+		name = "Ok."
+		trigger = {
+			original_tag = SPR
+		}
+	}
+
+	# Ok
+	option = {
+		name = "Ok."
+		trigger = {
+			original_tag = AUS
+		}
+	}
+}
+
+#large treasure fleet arrives from the indies
+
+country_event = {
+	id = spain.11
+	title = "Large treasure fleet arrives in Spain"
+	desc = spain.11.d
+
+	is_triggered_only = yes
+	
+	# Ok
+	option = {
+		name = "Very Good!"
+		add_timed_idea = {
+		    idea = SPR_large_treasure
+		    days = 180
+		}
+	}
+}
+
+#medium treasure fleet arrives from the indies
+
+country_event = {
+	id = spain.12
+	title = "Medium-sized treasure fleet arrives in Spain"
+	desc = spain.12.d
+
+	is_triggered_only = yes
+	
+	# Ok
+	option = {
+		name = "Good!"
+		add_timed_idea = {
+		    idea = SPR_medium_treasure
+		    days = 180
+		}
+	}
+}
+
+#small treasure fleet arrives from the indies
+
+country_event = {
+	id = spain.13
+	title = "Small treasure fleet arrives in Spain"
+	desc = spain.13.d
+
+	is_triggered_only = yes
+	
+	# Ok
+	option = {
+		name = "Is that all?"
+		add_timed_idea = {
+		    idea = SPR_small_treasure
+		    days = 180
+		}
+	}
+}
+
+#lost at sea
+
+country_event = {
+	id = spain.14
+	title = "Treasure fleet lost at sea!"
+	desc = spain.14.d
+
+	is_triggered_only = yes
+	
+	# Ok
+	option = {
+		name = "This is a disaster!"
+	}
+}
+
+#charles is dying
+
+country_event = {
+	id = spain.15
+	title = spain.15.t
+	desc = spain.15.d
+
+	picture = GFX_report_event_charles_deathbed
+
+	fire_only_once = yes
+	trigger = {
+		tag = SPR
+		AND = {
+			date > 1700.09.01	
+		}
+	}
+	mean_time_to_happen = {
+   		days = 1
+	}
+	option = {
+		name = "It would appear the end is drawing near..."
+		add_country_leader_trait = rapidly_deteriorating_health
+	}
+}
+
+#estates of castille ratify succession
+
+country_event = {
+	id = spain.16
+	title = spain.16.t
+	desc = spain.16.d
+	picture = GFX_report_event_castille
+
+	fire_only_once = yes
+	trigger = {
+		tag = SPR
+		has_completed_focus = SPR_bourbon_full
+	}
+	mean_time_to_happen = {
+   		days = 15
+	}
+	option = {
+		name = "As they should!"
+		add_political_power = 80
+		add_stability = 0.05
+	}
+}
+
+#estates of aragon are divided!
+
+country_event = {
+	id = spain.17
+	title = spain.17.t
+	desc = spain.17.d
+	picture = GFX_report_event_aragon
+
+	fire_only_once = yes
+	trigger = {
+		tag = SPR
+		has_completed_focus = SPR_bourbon_full
+	}
+	mean_time_to_happen = {
+   		days = 30
+	}
+	option = {
+		name = "Damn them!"
+		add_political_power = -50
+		add_stability = -0.05
+		activate_mission = SPR_estates_of_majorca_announce_allegiance
+		activate_mission = SPR_estates_of_sardinia_announce_allegiance
+		activate_mission = SPR_estates_of_naples_announce_allegiance
+		activate_mission = SPR_estates_of_valencia_announce_allegiance
+		activate_mission = SPR_estates_of_aragon_announce_allegiance
+		activate_mission = SPR_estates_of_catalonia_announce_allegiance
+		activate_mission = SPR_estates_of_sicily_announce_allegiance
+	}
+}
+
+#majorca philip
+
+country_event = {
+	id = spain.18
+	title = spain.18.t
+	desc = spain.18.d
+
+	is_triggered_only = yes
+	
+	option = {
+		name = "Good."
+		add_political_power = 20
+		add_stability = 0.01
+	}
+}
+
+#majorca charles
+
+country_event = {
+	id = spain.19
+	title = spain.19.t
+	desc = spain.19.d
+
+	is_triggered_only = yes
+	
+	option = {
+		name = "It's treason than..."
+		177 = { 
+			remove_core_of = SPR 
+			start_resistance = yes
+		} 
+	}
+}
+
+#sardinia philip
+
+country_event = {
+	id = spain.20
+	title = spain.20.t
+	desc = spain.20.d
+
+	is_triggered_only = yes
+	
+	# Ok
+	option = {
+		name = "Good."
+		add_political_power = 20
+		add_stability = 0.01
+	}
+}
+
+#sardinia charles
+
+country_event = {
+	id = spain.21
+	title = spain.21.t
+	desc = spain.21.d
+
+	is_triggered_only = yes
+	
+	option = {
+		name = "It's treason than..."
+		114 = { 
+			remove_core_of = SPR 
+			start_resistance = yes
+		} 
+	}
+}
+
+#valencia philip
+
+country_event = {
+	id = spain.22
+	title = spain.22.t
+	desc = spain.22.d
+
+	is_triggered_only = yes
+	
+	# Ok
+	option = {
+		name = "Good."
+		add_political_power = 20
+		add_stability = 0.01
+	}
+}
+
+#valencia charles
+
+country_event = {
+	id = spain.23
+	title = spain.23.t
+	desc = spain.23.d
+
+	is_triggered_only = yes
+	
+	option = {
+		name = "It's treason than..."
+		167 = { 
+			remove_core_of = SPR 
+			start_resistance = yes
+		} 
+	}
+}
+
+#naples event
+
+country_event = {
+	id = spain.24
+	title = spain.24.t
+	desc = spain.24.d
+
+	is_triggered_only = yes
+	
+	option = {
+		ai_chance = {
+		    base = 40
+
+		    modifier = {
+		        factor = 10
+		        SPR = { has_completed_focus = SPR_envoy_to_naples } 
+		    }
+		}
+		name = "Our loyalty to the king is without question!"
+		SPR = { country_event = spain.25 }
+		add_political_power = 25
+		add_stability = 0.05
+	}
+
+	option = {
+		ai_chance = {
+		    base = 20
+		}
+		name = "We will not support this pretender!"
+		SPR = { country_event = spain.26 }
+		SPR = { end_puppet = TSC }
+		add_war_support = 0.10
+	}
+}
+
+#naples yes
+
+country_event = {
+	id = spain.25
+	title = spain.25.t
+	desc = spain.25.d
+
+	is_triggered_only = yes
+	
+	option = {
+		name = "They made the right choice."
+		add_political_power = 20
+		add_stability = 0.01
+	}
+
+}
+#naples no
+
+country_event = {
+	id = spain.26
+	title = spain.26.t
+	desc = spain.26.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = "It's treason than..."
+		create_wargoal = {
+		    type = puppet_wargoal_focus
+		    target = TSC
+		}
+	}
+}
+
+#aragon philip
+
+country_event = {
+	id = spain.27
+	title = spain.27.t
+	desc = spain.27.d
+
+	is_triggered_only = yes
+	
+	# Ok
+	option = {
+		name = "Good."
+		add_political_power = 20
+		add_stability = 0.01
+	}
+}
+
+#aragon charles
+
+country_event = {
+	id = spain.28
+	title = spain.28.t
+	desc = spain.28.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = "It's treason than..."
+		166 = { 
+			remove_core_of = SPR 
+			start_resistance = yes
+		}
+		876 = { 
+			remove_core_of = SPR 
+			start_resistance = yes
+		}  
+	}
+}
+
+#catalonia philip
+
+country_event = {
+	id = spain.29
+	title = spain.29.t
+	desc = spain.29.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = "Their loyalty is appreciated!"
+		add_political_power = 20
+		add_stability = 0.01
+	}
+}
+
+
+#catalonia charles
+
+country_event = {
+	id = spain.30
+	title = spain.30.t
+	desc = spain.30.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = "It's treason than..."
+		165 = { 
+			remove_core_of = SPR 
+			start_resistance = yes
+		} 
+	}
+}
+
+#sicily philip
+
+country_event = {
+	id = spain.31
+	title = spain.31.t
+	desc = spain.31.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = "It's treason than..."
+		add_political_power = 20
+		add_stability = 0.01
+	}
+}
+
+#sicily charles
+
+country_event = {
+	id = spain.32
+	title = spain.32.t
+	desc = spain.32.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = "It's treason than..."
+		115 = { 
+			remove_core_of = SPR 
+			start_resistance = yes
+		} 
+	}
+}

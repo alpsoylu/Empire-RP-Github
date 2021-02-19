@@ -1,0 +1,133 @@
+add_namespace = new_event
+
+
+
+country_event = {
+	id = new_event.1
+	title = new_event.1.t
+	desc = new_event.1.d
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = new_event.1.a #Ok Let them have it
+		hidden_effect = {
+		HOL {
+		transfer_state = 8
+		transfer_state = 6
+		transfer_state = 34
+		transfer_state = 793
+		country_event = { id = new_event.3 }
+		}
+		}
+	}
+	
+	option = {
+		name = new_event.1.b #Nein!!!
+		hidden_effect = {
+		HOL = { country_event = { id = new_event.3 } }
+		}
+	}
+}
+#Benelux Forming Accept
+country_event = {
+	id = new_event.2
+	title = new_event.2.t
+	desc = new_event.2.d
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = new_event.2.a #GUT
+		hidden_effect = {
+		}
+	}
+}
+#Benelux Forming Reject
+country_event = {
+	id = new_event.3
+	title = new_event.3.t
+	desc = new_event.3.d
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = new_event.3.a #WELL OK THEN
+		hidden_effect = {
+		}
+	}
+	
+	option = {
+		name = new_event.3.b #THIS MEANS WAR
+		hidden_effect = {
+		HOL {
+		create_wargoal = {
+		    type = annex_everything
+		    target = BEL
+		}
+		}
+		add_war_support = 0.05
+		}
+	}
+}
+#REQUESTED POMERELIA
+country_event = {
+	id = new_event.4
+	title = new_event.4.t
+	desc = new_event.4.d
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = new_event.4.a #OK
+		hidden_effect = {
+		PRS = {
+		add_state_core = 62
+		add_state_core = 794
+		transfer_state = 62
+		transfer_state = 794
+		diplomatic_relation = {
+    country = SWE
+    relation = non_aggression_pact
+    active = yes
+}
+		}
+		
+		PRS = {
+		remove_state_core = 62
+		remove_state_core = 794
+		}
+	}
+	
+	option = {
+		name = new_event.4.b #NEIN
+		hidden_effect = {
+		PRS = {
+		add_state_claim = 62
+		add_state_claim = 794
+		}
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
