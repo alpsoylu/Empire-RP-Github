@@ -1373,6 +1373,9 @@ focus = {
 	WUR = { country_event = { id = generic.5 } }
 	RPA = { country_event = { id = generic.5 } }
 	HES = { country_event = { id = generic.5 } }
+	TRR = { country_event = { id = generic.5 } }
+	LUB = { country_event = { id = generic.5 } }
+	HAN = { country_event = { id = generic.5 } }
  	} 
 }
 
@@ -1410,7 +1413,7 @@ focus = {
  		factor = 1
  	} 
 	completion_reward = { 
-	SWE = { country_event = { id = new_event.4 } }
+	DEN = { country_event = { id = new_event.5 } }
  	} 
 }
 
@@ -1436,6 +1439,7 @@ focus = {
     target = HAM
     transfer_troops = yes
 }
+add_state_core = 882
 }
 
 if = {
@@ -1446,6 +1450,63 @@ if = {
     target = LUN
     transfer_troops = yes
 }
+add_state_core = 896
+}
+
+if = {
+    limit = {
+        is_in_faction_with = HAN
+    }   
+    annex_country = {
+    target = HAN
+    transfer_troops = yes
+}
+add_state_core = 896
+}
+
+if = {
+    limit = {
+        is_in_faction_with = MEC
+    }   
+    annex_country = {
+    target = MEC
+    transfer_troops = yes
+}
+add_state_core = 61
+}
+
+if = {
+    limit = {
+        is_in_faction_with = ANH
+    }   
+    annex_country = {
+    target = ANH
+    transfer_troops = yes
+}
+add_state_core = 883
+}
+
+if = {
+    limit = {
+        is_in_faction_with = SAX
+    }   
+    annex_country = {
+    target = SAX
+    transfer_troops = yes
+}
+add_state_core = 884
+add_state_core = 65
+}
+
+if = {
+    limit = {
+        is_in_faction_with = TRR
+    }   
+    annex_country = {
+    target = TRR
+    transfer_troops = yes
+}
+add_state_core = 887
 }
 
 if = {
@@ -1456,6 +1517,7 @@ if = {
     target = BSG
     transfer_troops = yes
 }
+add_state_core = 892
 }
 
 if = {
@@ -1466,6 +1528,7 @@ if = {
     target = THU
     transfer_troops = yes
 }
+add_state_core = 60
 }
 
 if = {
@@ -1476,6 +1539,9 @@ if = {
     target = MUN
     transfer_troops = yes
 }
+add_state_core = 56
+add_state_core = 893
+add_state_core = 57
 }
 
 if = {
@@ -1486,6 +1552,7 @@ if = {
     target = WRZ
     transfer_troops = yes
 }
+add_state_core = 54
 }
 
 if = {
@@ -1496,6 +1563,7 @@ if = {
     target = NUR
     transfer_troops = yes
 }
+add_state_core = 886
 }
 
 if = {
@@ -1506,6 +1574,7 @@ if = {
     target = ANS
     transfer_troops = yes
 }
+add_state_core = 894
 }
 
 
@@ -1518,6 +1587,7 @@ if = {
     target = MAI
     transfer_troops = yes
 }
+add_state_core = 889
 }
 
 if = {
@@ -1528,6 +1598,7 @@ if = {
     target = IFC
     transfer_troops = yes
 }
+add_state_core = 890
 }
 
 if = {
@@ -1538,6 +1609,9 @@ if = {
     target = BAV
     transfer_troops = yes
 }
+add_state_core = 52
+add_state_core = 53
+add_state_core = 885
 }
 
 if = {
@@ -1548,6 +1622,7 @@ if = {
     target = KOL
     transfer_troops = yes
 }
+add_state_core = 51
 }
 
 if = {
@@ -1558,6 +1633,8 @@ if = {
     target = SAL
     transfer_troops = yes
 }
+add_state_core = 914
+add_state_core = 915
 }
 
 if = {
@@ -1568,6 +1645,7 @@ if = {
     target = AUG
     transfer_troops = yes
 }
+add_state_core = 898
 }
 
 if = {
@@ -1578,6 +1656,7 @@ if = {
     target = ULM
     transfer_troops = yes
 }
+add_state_core = 901
 }
 
 if = {
@@ -1588,6 +1667,18 @@ if = {
     target = WUR
     transfer_troops = yes
 }
+add_state_core = 50
+}
+
+if = {
+    limit = {
+        is_in_faction_with = LUB
+    }   
+    annex_country = {
+    target = LUB
+    transfer_troops = yes
+}
+add_state_core = 899
 }
 
 if = {
@@ -1598,6 +1689,9 @@ if = {
     target = RPA
     transfer_troops = yes
 }
+add_state_core = 42
+add_state_core = 895
+add_state_core = 861
 }
 
 if = {
@@ -1608,8 +1702,46 @@ if = {
     target = HES
     transfer_troops = yes
 }
+add_state_core = 55
 }
 
+ 	} 
+}
+
+
+
+
+focus = { 
+	id = PRS_request_silesia
+	icon = GFX_focus_ger_oppose_hitler
+	x = -2
+	y = 1
+	cost = 5
+	available_if_capitulated = yes
+	relative_position_id = PRS_unite_germany
+	prerequisite = { focus = PRS_unite_germany } 	
+	ai_will_do = { 
+ 		factor = 1
+ 	} 
+	completion_reward = { 
+	AUS = { country_event = { id = new_event.6 } }
+ 	} 
+}
+
+focus = { 
+	id = PRS_request_danzig_and_poznan
+	icon = GFX_focus_generic_monarchy_1
+	x = -1
+	y = 1
+	cost = 5
+	available_if_capitulated = yes
+	relative_position_id = PRS_request_silesia
+	prerequisite = { focus = PRS_request_silesia } 	
+	ai_will_do = { 
+ 		factor = 1
+ 	} 
+	completion_reward = { 
+	POL = { country_event = { id = new_event.7 } }
  	} 
 }
 

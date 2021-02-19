@@ -80,6 +80,9 @@ country_event = {
 	is_triggered_only = yes
 	option = {
 		name = new_event.4.a #OK
+		ai_chance = {
+			factor = 80
+		}
 		hidden_effect = {
 		PRS = {
 		add_state_core = 62
@@ -93,10 +96,11 @@ country_event = {
 }
 		}
 		
-		PRS = {
+		SWE = {
 		remove_state_core = 62
 		remove_state_core = 794
 		}
+	}
 	}
 	
 	option = {
@@ -112,7 +116,130 @@ country_event = {
 
 
 
+#REQUESTED POMERELIA
+country_event = {
+	id = new_event.5
+	title = new_event.5.t
+	desc = new_event.5.d
 
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = new_event.5.a #OK
+		ai_chance = {
+			factor = 80
+		}
+		hidden_effect = {
+		PRS = {
+		add_state_core = 866
+		transfer_state = 866
+		diplomatic_relation = {
+    country = DEN
+    relation = non_aggression_pact
+    active = yes
+}
+		}
+	}
+	}
+	
+	option = {
+		name = new_event.5.b #NEIN
+		hidden_effect = {
+		PRS = {
+		add_state_claim = 866
+		}
+		}
+	}
+}
+
+
+
+
+
+
+
+
+#REQUESTED SILESIA
+country_event = {
+	id = new_event.6
+	title = new_event.6.t
+	desc = new_event.6.d
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = new_event.6.a #OK
+		hidden_effect = {
+		PRS = {
+		transfer_state = 66
+		transfer_state = 67
+		transfer_state = 762
+		add_state_core = 66
+		add_state_claim = 67
+		add_state_claim = 762
+		}
+	}
+	}
+	
+	option = {
+		ai_chance = {
+			factor = 80
+		}
+		name = new_event.5.b #NEIN
+		hidden_effect = {
+		PRS = {
+		add_state_claim = 66
+		add_state_claim = 67
+		add_state_claim = 762
+		create_wargoal = {
+	type = take_state_focus
+	target = AUS
+	generator = { 66 67 762 }
+}
+		}
+		}
+	}
+}
+
+
+
+#REQUESTED DANZIG
+country_event = {
+	id = new_event.7
+	title = new_event.7.t
+	desc = new_event.7.d
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = new_event.7.a #OK
+		ai_chance = {
+			factor = 80
+		}
+		hidden_effect = {
+		PRS = {
+		add_state_core = 868
+		add_state_core = 85
+		add_state_core = 86
+		
+		transfer_state = 868
+		transfer_state = 85
+		transfer_state = 86
+		}
+	}
+	}
+	
+	option = {
+		name = new_event.7.b #NEIN
+		hidden_effect = {
+		PRS = {
+		add_state_claim = 868
+		add_state_claim = 85
+		add_state_claim = 86
+		}
+		}
+	}
+}
 
 
 

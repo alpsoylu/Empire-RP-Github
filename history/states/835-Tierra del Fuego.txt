@@ -6,7 +6,11 @@ state={
 	}
 	history={
 		owner = UNC
-
+buildings = {
+			infrastructure = 9
+			arms_factory = 8
+			industrial_complex = 12
+			}
 	}
 	manpower=1000
 	buildings_max_level_factor=1.000

@@ -2,18 +2,20 @@ ideas = {
 	country = {
 		isolationism_idea = {		
 			allowed = {
-				always = no
+				always = yes
 			}
 
 			picture = undisturbed_isolation
 
 			allowed_civil_war = {
-				has_government = neutrality
+				always = yes
 			}
 
 			cancel = {
+				OR {
 				has_war = yes
 				is_ai = no
+				}
 			}
 			
 			removal_cost = -1
@@ -24,6 +26,11 @@ ideas = {
 				#lend_lease_tension = 0.50
 				send_volunteers_tension = 1.00
 				guarantee_tension = 1.0
+				production_factory_max_efficiency_factor = -200
+				command_power_gain = -5000
+				conscription = -200000
+				civilian_factory_use = 30000
+				consumer_goods_factor = 0.9
 				ai_badass_factor = 0.01    # Will receive 1% of the threat from others
 				ai_get_ally_desire_factor = -1000
 			}
