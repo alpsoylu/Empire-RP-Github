@@ -1246,6 +1246,7 @@ add_opinion_modifier = {
     modifier = protest_action
 }	
 }
+remove_country_flag = HRE_imperial_subject
  	} 
 }
 
@@ -1262,6 +1263,60 @@ focus = {
  		factor = 1
  	} 
 	completion_reward = { 
+diplomatic_relation = {
+    country = HES
+    relation = military_access
+    active = no
+}
+diplomatic_relation = {
+    country = RPA
+    relation = military_access
+    active = no
+}
+diplomatic_relation = {
+    country = BSG
+    relation = military_access
+    active = no
+}
+
+SAX = {
+diplomatic_relation = {
+    country = PRS
+    relation = military_access
+    active = no
+}
+}
+
+IFC = {
+diplomatic_relation = {
+    country = PRS
+    relation = military_access
+    active = no
+}
+}
+
+AUS = {
+diplomatic_relation = {
+    country = PRS
+    relation = military_access
+    active = no
+}
+}
+
+AUS = {
+diplomatic_relation = {
+    country = PRS
+    relation = guarantee
+    active = no
+}
+}
+
+diplomatic_relation = {
+    country = IFC
+    relation = guarantee
+    active = no
+}
+
  	} 
 }
 
@@ -1462,6 +1517,7 @@ if = {
     transfer_troops = yes
 }
 add_state_core = 896
+add_state_core = 59
 }
 
 if = {
