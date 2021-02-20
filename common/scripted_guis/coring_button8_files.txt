@@ -25,7 +25,7 @@ scripted_gui = {
 		triggers = {
 			create_core8_click_enabled = {
 				check_variable = { ROOT.political_power > 299.99 }
-				compliance > 65
+				compliance > 50
 			}
 		}
 		        
