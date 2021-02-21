@@ -1,0 +1,47 @@
+capital = 960
+
+set_stability = 0.1
+set_war_support = 0.5
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_support = 1		
+	tech_engineers = 1
+	tech_recon = 1
+	transport = 1
+}
+
+set_convoys = 20
+
+add_ideas = {
+	hinduism
+}
+
+create_faction = "The Polygar Princes"
+add_to_faction = MYS
+add_to_faction = MDR
+
+set_politics = {
+	ruling_party = neutrality
+	last_election = "1935.11.14"
+	election_frequency = 48
+	elections_allowed = no
+}
+set_popularities = {
+	neutrality = 30
+	aristocracy = 35
+	fascism = 15
+	communism = 5
+	democratic = 15
+}
+
+create_country_leader = {
+	name = "Chhattrapati Shahu"
+	desc = ""
+	picture = "gfx/leaders/India/Indian_ruler_1.dds"
+	ideology = despotism
+	traits = {
+		#
+	}
+}

@@ -1,0 +1,31 @@
+
+state={
+	id=202
+	name="STATE_202"
+	resources={
+		oil=8.000
+		aluminium=7.000
+	}
+
+	history={
+		victory_points = {
+			488 5 
+		}
+		owner = POL
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+			fuel_silo = 1
+
+		}
+		add_core_of = POL
+		add_core_of = UKR
+	}
+
+	provinces={
+		488 504 3494 3543 6497 9465 9568 11438 11454 
+	}
+	manpower=202937
+	buildings_max_level_factor=1.000
+	state_category=city
+}

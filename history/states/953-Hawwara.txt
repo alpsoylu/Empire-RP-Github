@@ -1,0 +1,16 @@
+state={
+	id=953
+	name="STATE_953"
+	provinces={
+		4138 4910 8105 10745 10844 12771 
+	}
+	history={
+		owner = UNC
+		victory_points = {
+			10844 1 
+		}
+	}
+	manpower=5478
+	buildings_max_level_factor=1.000
+	state_category=wasteland
+}

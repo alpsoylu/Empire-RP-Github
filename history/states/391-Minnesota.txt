@@ -1,0 +1,26 @@
+
+state={
+	id=391
+	name="STATE_391"
+	resources={
+		steel=8
+	}
+
+	history={
+
+		buildings = {
+			infrastructure = 1
+
+		}
+		owner = QUE
+		add_core_of = QUE
+		add_core_of = LOU
+	}
+
+	provinces={
+		1866 1867 4664 4807 6752 7536 9880 10618 10719 11667 12577 12597 12693 
+	}
+	manpower=256
+	buildings_max_level_factor=1.000
+	state_category=city
+}

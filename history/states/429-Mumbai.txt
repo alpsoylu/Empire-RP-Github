@@ -1,0 +1,24 @@
+
+state={
+	id=429
+	name="STATE_429"
+	resources={
+		tungsten=19.000
+	}
+
+	history={
+		owner = RAJ
+		add_core_of = RAJ
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+		}
+	}
+
+	provinces={
+		1405 4072 4353 7060 7177 10019 12142 
+	}
+	manpower=2355600
+	buildings_max_level_factor=1.000
+	state_category=town
+}
