@@ -291,11 +291,10 @@ ideas = {
 		}
 	}
 
-	PRS_blood_and_iron_politics = {
+	PRS_non_integrated_economy = {
 
-		picture = FRA_scw_intervention_nationalists_focus
+		picture = PRS_economy
 
-		name = PRS_blood_and_iron_politics
 	
 		allowed = {
 			always = no
@@ -304,9 +303,11 @@ ideas = {
 		removal_cost = -1
 		
 		modifier = {
-			justify_war_goal_time = -0.25
-			generate_wargoal_tension = -0.4
-			war_support_factor = 0.10
+			consumer_goods_factor = 0.5
+			production_speed_industrial_complex_factor = -0.3
+			production_speed_arms_factory_factor = -0.3
 		}
 	}
+	
+   }
 }
