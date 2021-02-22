@@ -1,0 +1,8 @@
+PRS_non_integrated = {
+	enable = { always = yes }
+
+	icon = GFX_modifiers_sabotaged_resource
+	
+	local_factories = -0.9
+	local_resources = -0.6
+}
