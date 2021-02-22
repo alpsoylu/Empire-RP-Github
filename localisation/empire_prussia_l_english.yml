@@ -37,6 +37,12 @@ new_event.8.d:0"We have seized Silezia.Should we continue our attack into Southe
 new_event.8.a:0"We should stop to get a stronger ally"
 new_event.8.b:0"No!We should unite Germany at once!"
 PRS_non_integrated_economy:0"Non Integrated Economy"
+WAR_NAME_PRS_AUS:0 "The Bruderkrieg"
+WAR_NAME_AUS_PRS:0 "The Bruderkrieg"
+WAR_NAME_SWE_SOV:0 "The Great Northern War"
+WAR_NAME_SOV_SWE:0 "The Great Northern War"
+WAR_NAME_SWE_DAN:0 "The Great Northern War"
+WAR_NAME_DAN_SWE:0 "The Great Northern War"
 
 #focus
 PRS_sendultimatum:0 "Send Ultimatum"
