@@ -1487,7 +1487,6 @@ focus = {
  	} 
 	completion_reward = { 
 	set_cosmetic_tag = GER_PRS_FORMED
-	add_timed_idea = { idea = PRS_non_integrated_economy  days = 180 }
 	if = {
     limit = {
         is_in_faction_with = HAM

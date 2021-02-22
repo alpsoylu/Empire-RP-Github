@@ -36,7 +36,6 @@ new_event.8.t:0"We have seized Silezia.Should we continue our attack into Southe
 new_event.8.d:0"We have seized Silezia.Should we continue our attack into Southern Germany or should we stop..§OStopping will get us into an alliance with Austria§!"
 new_event.8.a:0"We should stop to get a stronger ally"
 new_event.8.b:0"No!We should unite Germany at once!"
-PRS_non_integrated_economy:0"Non Integrated Economy"
 
 #focus
 PRS_sendultimatum:0 "Send Ultimatum"
