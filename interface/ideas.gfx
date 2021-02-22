@@ -4806,4 +4806,8 @@ spriteTypes = {
 		name = "GFX_idea_prince_elector"
 		texturefile = "gfx/interface/ideas/idea_prince_elector.dds"
 	}
+	spriteType = {
+		name = "GFX_idea_PRS_economy"
+		texturefile = "gfx/interface/ideas/PRS_economy.dds"
+	}
 }
