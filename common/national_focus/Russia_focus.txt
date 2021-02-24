@@ -1287,10 +1287,6 @@ focus = {
 		TUR = { has_war = yes }
 	}
 	completion_reward = {
-		transfer_state = 227
-		transfer_state = 200
-		transfer_state = 196
-		transfer_state = 137
 		transfer_state = 234
 		TUR = {country_event = russia.1 }	
 	}
