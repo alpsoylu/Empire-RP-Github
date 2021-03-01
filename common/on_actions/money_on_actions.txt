@@ -93,6 +93,44 @@ on_actions = {
 				}
 				set_variable = { depression = 0.2}
 				}	
+				
+				
+				
+
+				
+				every_country={
+				limit={
+				has_idea = low_economic_mobilisation
+				}
+				divide_variable = { depression = 0.75}
+				}
+				
+				every_country={
+				limit={
+				has_idea = partial_economic_mobilisation
+				}
+				divide_variable = { depression = 0.5}
+				}
+				
+				every_country={
+				limit={
+				has_idea = war_economy
+				}
+				divide_variable = { depression = 0.35}
+				}
+				
+				every_country={
+				limit={
+				has_idea = tot_economic_mobilisation
+				}
+				divide_variable = { depression = 0.25}
+				}
+				
+				
+				
+				
+				
+				
 				every_country={
 				limit={
 				tag=JAP
