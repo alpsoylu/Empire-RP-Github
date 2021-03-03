@@ -1,0 +1,166 @@
+scripted_gui = {
+	
+	pd_offer_peace_deal = {
+	
+		context_type = diplomatic_action
+		
+		window_name = "pd_offer_peace_deal"
+		
+		visible = {
+			always = yes
+		}
+		
+		dynamic_lists = {
+			# name of the grid box gui element
+			pd_state_grid = {
+				array = owned_states
+				change_scope = yes
+				entry_container = "[pd_offer_peace_deal_loc]" 
+			}
+		}
+		
+		effects = {
+		
+			take_click = {
+				set_variable = { ROOT.pd_selected = 1 }
+			}
+		
+			puppet_click = {
+				set_variable = { ROOT.pd_selected = 2 }
+			}
+			
+			demilitarize_click = {
+				set_variable = { ROOT.pd_selected = 3 }
+			}
+			
+			liberate_click = {
+				set_variable = { ROOT.pd_selected = 4 }
+			}
+			
+			war_reparations_click = {
+				set_variable = { ROOT.pd_war_reparations = 1 }
+				add_to_variable = { ROOT.pd_total_cost = ROOT.pd_wr_cost }
+			}
+			
+			war_reparations_set_click = {
+				set_variable = { ROOT.pd_war_reparations = 0 }
+				subtract_from_variable = { ROOT.pd_total_cost = ROOT.pd_wr_cost }
+			}
+			
+			disarm_click = {
+				set_variable = { ROOT.pd_disarm = 1 }
+				add_to_variable = { ROOT.pd_total_cost = ROOT.pd_disarm_cost }
+			}
+			
+			disarm_set_click = {
+				set_variable = { ROOT.pd_disarm = 0 }
+				subtract_from_variable = { ROOT.pd_total_cost = ROOT.pd_disarm_cost }
+			}
+			
+			pd_mark_click = {
+				add_state_to_list = yes
+			}
+			
+			pd_unmark_click = {
+				remove_state_from_list = yes
+			}
+		}
+		
+		triggers = {
+		
+			pd_mark_click_enabled = {
+				ROOT = {
+					NOT = { has_country_flag = pd_waiting_response }
+				}
+			}
+			
+			pd_unmark_click_enabled = {
+				ROOT = {
+					NOT = { has_country_flag = pd_waiting_response }
+				}
+			}
+		
+			take_selected_visible = {
+				check_variable = { ROOT.pd_selected = 1 }
+			}
+			
+			puppet_selected_visible = {
+				check_variable = { ROOT.pd_selected = 2 }
+			}
+			
+			demilitarize_selected_visible = {
+				check_variable = { ROOT.pd_selected = 3 }
+			}
+			
+			liberate_selected_visible = {
+				check_variable = { ROOT.pd_selected = 4 }
+			}
+			
+			war_reparations_set_visible = {
+				check_variable = { ROOT.pd_war_reparations = 1 }
+			}
+			
+			war_reparations_click_enabled = {
+				check_variable = { wr_payments < 2 }
+				ROOT = {
+					NOT = { has_country_flag = pd_waiting_response }
+				}
+			}
+			
+			war_reparations_set_click_enabled = {
+				ROOT = {
+					NOT = { has_country_flag = pd_waiting_response }
+				}
+			}
+			
+			disarm_set_visible = {
+				check_variable = { ROOT.pd_disarm = 1 }
+			}
+			
+			disarm_click_enabled = {
+				ROOT = {
+					NOT = { has_country_flag = pd_waiting_response }
+				}
+			}
+			
+			disarm_set_click_enabled = {
+				ROOT = {
+					NOT = { has_country_flag = pd_waiting_response }
+				}
+			}
+			
+			accept_icon_yes_visible = {
+				pd_ai_will_accept = yes
+			}
+			
+			accept_icon_no_visible = {
+				NOT = { pd_ai_will_accept = yes }
+			}
+		}
+		
+		ai_enabled = {
+			#TODO
+			always = no
+        }
+		
+		#TODO
+		ai_max_weight_taken_per_test = 5
+		
+		#TODO
+		ai_weights = {
+		    pd_mark_click = {
+				ai_will_do = {
+					base = -1
+					modifier = {
+						add = 10
+						is_core_of = ROOT
+					} 
+				}
+				
+				weight = 1 
+			}
+		}
+        
+	}
+}
+
