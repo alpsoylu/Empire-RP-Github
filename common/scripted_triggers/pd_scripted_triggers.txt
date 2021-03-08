@@ -52,11 +52,6 @@ pd_ai_will_accept = {
 	set_temp_variable = { rvp = ROOT.vp@PREV }
 	set_temp_variable = { tvp = THIS.vp@ROOT }
 	subtract_from_temp_variable = { rvp = tvp }
-	clamp_temp_variable = {
-		var = tvp
-		min = 1
-	}
-	divide_temp_variable = { rvp = tvp }
 	round_temp_variable = rvp
 	add_to_temp_variable = { will_accept = rvp }
 			
@@ -86,7 +81,7 @@ pd_ai_will_accept = {
 		limit = {
 			check_variable = { ROOT.vp@PREV < ROOT.pd_total_cost }
 		}
-		subtract_from_temp_variable = { str = 10000 }
+		subtract_from_temp_variable = { will_accept = 10000 }
 	}
 	
 	# is major
@@ -94,7 +89,7 @@ pd_ai_will_accept = {
 		limit = {
 			is_major = yes
 		}
-		subtract_from_temp_variable = { str = 200 }
+		subtract_from_temp_variable = { will_accept = 200 }
 	}
 	
 	# is in faction
@@ -102,7 +97,7 @@ pd_ai_will_accept = {
 		limit = {
 			is_in_faction = yes
 		}
-		subtract_from_temp_variable = { str = 100 }
+		subtract_from_temp_variable = { will_accept = 100 }
 	}
 	
 	# Final check

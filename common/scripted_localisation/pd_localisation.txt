@@ -36,6 +36,156 @@ defined_text = {
 }
 
 defined_text = { 
+	name = pd_description_loc
+
+	text = {
+		trigger = {
+			ROOT = { has_country_flag = pd_root_gives }
+		}
+		localization_key = pd_description_root_gives
+	}
+	
+	text = {
+		localization_key = pd_description_root_takes
+	}
+}
+
+defined_text = { 
+	name = pd_war_reperations_loc
+
+	text = {
+		trigger = {
+			ROOT = { has_country_flag = pd_root_gives }
+		}
+		localization_key = pd_war_reperations_root_pays
+	}
+	
+	text = {
+		localization_key = pd_war_reperations_root_gets
+	}
+}
+
+defined_text = { 
+	name = pd_disarm_loc
+
+	text = {
+		trigger = {
+			ROOT = { has_country_flag = pd_root_gives }
+		}
+		localization_key = pd_disarm_root
+	}
+	
+	text = {
+		localization_key = pd_disarm_this
+	}
+}
+
+defined_text = { 
+	name = pd_take_loc
+
+	text = {
+		trigger = {
+			ROOT = { has_country_flag = pd_root_gives }
+		}
+		localization_key = pd_give_state
+	}
+	
+	text = {
+		localization_key = pd_take_state
+	}
+}
+
+defined_text = { 
+	name = pd_recieve_take_loc
+
+	text = {
+		trigger = {
+			ROOT = { has_country_flag = pd_root_gives }
+		}
+		localization_key = pd_recieve_take_good
+	}
+	
+	text = {
+		localization_key = pd_recieve_take_bad
+	}
+}
+
+defined_text = { 
+	name = pd_recieve_puppet_loc
+
+	text = {
+		trigger = {
+			ROOT = { has_country_flag = pd_root_gives }
+		}
+		localization_key = pd_recieve_puppet_good
+	}
+	
+	text = {
+		localization_key = pd_recieve_puppet_bad
+	}
+}
+
+defined_text = { 
+	name = pd_recieve_demilitarize_loc
+
+	text = {
+		trigger = {
+			ROOT = { has_country_flag = pd_root_gives }
+		}
+		localization_key = pd_recieve_demilitarize_good
+	}
+	
+	text = {
+		localization_key = pd_recieve_demilitarize_bad
+	}
+}
+
+defined_text = { 
+	name = pd_recieve_liberate_loc
+
+	text = {
+		trigger = {
+			ROOT = { has_country_flag = pd_root_gives }
+		}
+		localization_key = pd_recieve_liberate_good
+	}
+	
+	text = {
+		localization_key = pd_recieve_liberate_bad
+	}
+}
+
+defined_text = { 
+	name = pd_war_reperations_recieve_loc
+
+	text = {
+		trigger = {
+			ROOT = { has_country_flag = pd_root_gives }
+		}
+		localization_key = pd_war_reperations_good
+	}
+	
+	text = {
+		localization_key = pd_war_reperations_bad
+	}
+}
+
+defined_text = { 
+	name = pd_disarm_recieve_loc
+
+	text = {
+		trigger = {
+			ROOT = { has_country_flag = pd_root_gives }
+		}
+		localization_key = pd_disarm_good
+	}
+	
+	text = {
+		localization_key = pd_disarm_bad
+	}
+}
+
+defined_text = { 
 	name = pd_state_cost
 
 	text = {

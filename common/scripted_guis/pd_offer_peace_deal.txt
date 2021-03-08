@@ -11,15 +11,28 @@ scripted_gui = {
 		}
 		
 		dynamic_lists = {
-			# name of the grid box gui element
 			pd_state_grid = {
-				array = owned_states
+				array = ROOT.pd_state_list
 				change_scope = yes
 				entry_container = "[pd_offer_peace_deal_loc]" 
 			}
 		}
 		
 		effects = {
+		
+			# Tab selection
+			
+			pd_tab_take_click = {
+				ROOT = { clr_country_flag = pd_root_gives }
+				reset_peace_deal_proposal = yes
+			}
+			
+			pd_tab_give_click = {
+				ROOT = { set_country_flag = pd_root_gives }
+				reset_peace_deal_proposal = yes
+			}
+		
+			# State marking mode
 		
 			take_click = {
 				set_variable = { ROOT.pd_selected = 1 }
@@ -37,25 +50,55 @@ scripted_gui = {
 				set_variable = { ROOT.pd_selected = 4 }
 			}
 			
+			# War reparations
+			
 			war_reparations_click = {
 				set_variable = { ROOT.pd_war_reparations = 1 }
-				add_to_variable = { ROOT.pd_total_cost = ROOT.pd_wr_cost }
+				if = {
+					limit = { ROOT = { has_country_flag = pd_root_gives } }
+					subtract_from_variable = { ROOT.pd_total_cost = ROOT.pd_wr_cost }
+				}
+				else = {
+					add_to_variable = { ROOT.pd_total_cost = ROOT.pd_wr_cost }
+				} 
 			}
 			
 			war_reparations_set_click = {
 				set_variable = { ROOT.pd_war_reparations = 0 }
-				subtract_from_variable = { ROOT.pd_total_cost = ROOT.pd_wr_cost }
+				if = {
+					limit = { ROOT = { has_country_flag = pd_root_gives } }
+					add_to_variable = { ROOT.pd_total_cost = ROOT.pd_wr_cost }
+				}
+				else = {
+					subtract_from_variable = { ROOT.pd_total_cost = ROOT.pd_wr_cost }
+				} 
 			}
+			
+			# Disarm
 			
 			disarm_click = {
 				set_variable = { ROOT.pd_disarm = 1 }
-				add_to_variable = { ROOT.pd_total_cost = ROOT.pd_disarm_cost }
+				if = {
+					limit = { ROOT = { has_country_flag = pd_root_gives } }
+					subtract_from_variable = { ROOT.pd_total_cost = ROOT.pd_disarm_cost }
+				}
+				else = {
+					add_to_variable = { ROOT.pd_total_cost = ROOT.pd_disarm_cost }
+				} 
 			}
 			
 			disarm_set_click = {
 				set_variable = { ROOT.pd_disarm = 0 }
-				subtract_from_variable = { ROOT.pd_total_cost = ROOT.pd_disarm_cost }
+				if = {
+					limit = { ROOT = { has_country_flag = pd_root_gives } }
+					add_to_variable = { ROOT.pd_total_cost = ROOT.pd_disarm_cost }
+				}
+				else = {
+					subtract_from_variable = { ROOT.pd_total_cost = ROOT.pd_disarm_cost }
+				} 
 			}
+			
+			# Marking states
 			
 			pd_mark_click = {
 				add_state_to_list = yes
@@ -64,9 +107,51 @@ scripted_gui = {
 			pd_unmark_click = {
 				remove_state_from_list = yes
 			}
+			
+			pd_mark_give_click = {
+				add_state_to_list = yes
+			}
+			
+			pd_unmark_give_click = {
+				remove_state_from_list = yes
+			}
 		}
 		
 		triggers = {
+		
+			# Tab selection
+		
+			pd_take_state_grid_visible = {
+				NOT = { ROOT = { has_country_flag = pd_root_gives } }
+			}
+			
+			pd_tab_take_active_visible = {
+				NOT = { ROOT = { has_country_flag = pd_root_gives } }
+			}
+			
+			pd_give_state_grid_visible = {
+				ROOT = { has_country_flag = pd_root_gives }
+			}
+			
+			pd_tab_give_active_visible = {
+				ROOT = { has_country_flag = pd_root_gives }
+			}
+			
+			pd_mark_give_visible = {
+				ROOT = { has_country_flag = pd_root_gives }
+			}
+			
+			pd_unmark_give_visible = {
+				ROOT = { has_country_flag = pd_root_gives }
+			}
+			
+			# Waitng response disable
+			
+			pd_tab_give_click_enabled = {
+				ROOT = {
+					NOT = { has_country_flag = pd_waiting_response }
+				}
+			}
 		
 			pd_mark_click_enabled = {
 				ROOT = {
@@ -79,6 +164,8 @@ scripted_gui = {
 					NOT = { has_country_flag = pd_waiting_response }
 				}
 			}
+			
+			# State marking mode
 		
 			take_selected_visible = {
 				check_variable = { ROOT.pd_selected = 1 }
@@ -100,6 +187,8 @@ scripted_gui = {
 				check_variable = { ROOT.pd_war_reparations = 1 }
 			}
 			
+			# War reparations
+			
 			war_reparations_click_enabled = {
 				check_variable = { wr_payments < 2 }
 				ROOT = {
@@ -112,6 +201,8 @@ scripted_gui = {
 					NOT = { has_country_flag = pd_waiting_response }
 				}
 			}
+			
+			# Disarm
 			
 			disarm_set_visible = {
 				check_variable = { ROOT.pd_disarm = 1 }
@@ -128,6 +219,8 @@ scripted_gui = {
 					NOT = { has_country_flag = pd_waiting_response }
 				}
 			}
+			
+			# Acceptance icon
 			
 			accept_icon_yes_visible = {
 				pd_ai_will_accept = yes
