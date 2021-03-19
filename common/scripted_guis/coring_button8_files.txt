@@ -15,22 +15,20 @@ scripted_gui = {
 		
 		effects = {
 			create_core8_click = {
-				ROOT = { 
-					add_political_power = -300 
-				}
+				ROOT = {add_to_variable = { money = -40}}
 				
 				add_core_of = FROM
 				}
 		}
 		triggers = {
 			create_core8_click_enabled = {
-				check_variable = { ROOT.political_power > 299.99 }
+				ROOT = {check_variable = {money > 40}}
 				compliance > 50
 			}
 		}
 		        
 		ai_check = {
-			check_variable = { ROOT.political_power > 299.99 }
+			ROOT = {check_variable = {money > 40}}
 			check_variable = { ai_random > 0.65 }
 		}
 		
