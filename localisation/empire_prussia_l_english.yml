@@ -2,7 +2,10 @@
 #tooltips
 PRS_silezia_expansion:0 "This will unlock decisisions to start a border war with Silesia."
 PRS_hre_tree_unavailable:0 "§RIn the current version of the mod, this country path is not yet available. It will be released in a later update, so stay tuned!§!"
+<<<<<<< HEAD
 
+=======
+>>>>>>> parent of 72dba55 (bunu revertle)
 #decisions
 PRS_expansion:0 "Prussian Expansion"
 PRS_clash_over_niederlausitz:0 "Clash over Niederlausitz"
@@ -13,6 +16,40 @@ PRS_clash_over_hamburg:0 "Clash over Hamburg"
 PRS_clash_over_lower_silezia:0 "Clash over Lower Silesia"
 PRS_clash_over_upper_silezia:0 "Clash over Upper Silesia"
 PRS_clash_over_katowice:0 "Clash over Katowice"
+<<<<<<< HEAD
+=======
+new_event.5:0 "Prussia Requests Danish Territories in Germany for a non agression pact"
+new_event.5.t:0 "Prussia Requests Danish Territories in Germany for a non agression pact"
+new_event.5.d:0 "Prussia Requests Danish Territories in Germany for a non agression pact"
+new_event.5.a:0 "Yes they can have it!"
+new_event.5.b:0 "No!"
+new_event.6:0 "Prussia Requests Austrian Silezia"
+new_event.6.t:0 "Prussia Requests Austrian Silezia"
+new_event.6.d:0 "Prussia Requests Austrian Silezia"
+new_event.6.a:0 "Yes they can have it!"
+new_event.6.b:0 "No!"
+new_event.7:0 "Prussia Requests Poznan and Danzig"
+new_event.7.t:0 "Prussia Requests Poznan and Danzig"
+new_event.7.d:0 "Prussia Requests Poznan and Danzig"
+new_event.7.a:0 "Yes they can have it!"
+new_event.7.b:0 "No!"
+new_event.9:0"We have Finally Achieved our goal to unite the Germanic People."
+new_event.9.t:0"We have Finally Achieved our goal to unite the Germanic People."
+new_event.9.d:0"We have Finally Achieved our goal to unite the Germanic People."
+new_event.9.a:0"Germans of All Country,UNITE!"
+new_event.8:0"We have seized Silezia.Should we continue our attack into Southern Germany or should we stop."
+new_event.8.t:0"We have seized Silezia.Should we continue our attack into Southern Germany or should we stop..§OStopping will get us into an alliance with Austria§!"
+new_event.8.d:0"We have seized Silezia.Should we continue our attack into Southern Germany or should we stop..§OStopping will get us into an alliance with Austria§!"
+new_event.8.a:0"We should stop to get a stronger ally"
+new_event.8.b:0"No!We should unite Germany at once!"
+PRS_non_integrated_economy:0"Non Integrated Economy"
+WAR_NAME_PRS_AUS:0 "The Bruderkrieg"
+WAR_NAME_AUS_PRS:0 "The Bruderkrieg"
+WAR_NAME_SWE_SOV:0 "The Great Northern War"
+WAR_NAME_SOV_SWE:0 "The Great Northern War"
+WAR_NAME_SWE_DAN:0 "The Great Northern War"
+WAR_NAME_DAN_SWE:0 "The Great Northern War"
+>>>>>>> parent of 72dba55 (bunu revertle)
 
 #focus
 PRS_sendultimatum:0 "Send Ultimatum"

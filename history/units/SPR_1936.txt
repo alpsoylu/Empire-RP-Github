@@ -241,6 +241,7 @@ units = {
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.8
 
+<<<<<<< HEAD
 	}			
 	division = {			
 		name = "Circunscripción Oriental"		
@@ -250,6 +251,9 @@ units = {
 		start_equipment_factor = 0.8
 
 	}			
+=======
+	}						
+>>>>>>> parent of 72dba55 (bunu revertle)
 }
 
 instant_effect = {

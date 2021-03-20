@@ -38,6 +38,7 @@ units = {
 		division_template = "División de Infanteria"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.3
+<<<<<<< HEAD
 
 	}
 	division= {	# "2da División de Infantería"
@@ -72,6 +73,8 @@ units = {
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.3
 
+=======
+>>>>>>> parent of 72dba55 (bunu revertle)
 	}
 	division= {	
 		name = "División de Caballería"

@@ -271,6 +271,7 @@ units = {
 #Border Ottomans
 
 	division= {
+<<<<<<< HEAD
 		name = "Regular Regiment"
 		location = 453
 		division_template = "Regular Regiment"
@@ -292,6 +293,8 @@ units = {
 		start_equipment_factor = 0.7
 	}
 	division= {
+=======
+>>>>>>> parent of 72dba55 (bunu revertle)
 		name = "Cossack Regiment"
 		location = 3466
 		division_template = "Cossack Regiment"

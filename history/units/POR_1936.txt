@@ -190,6 +190,7 @@ units = {
 		start_experience_factor = 0.3
 	}
 
+<<<<<<< HEAD
 	division = { # "1a Caçadores de Angola"
 		division_name = {
 				is_name_ordered = yes
@@ -199,6 +200,8 @@ units = {
 		division_template = "Força de Caçadores"
 		start_experience_factor = 0.3
 	}
+=======
+>>>>>>> parent of 72dba55 (bunu revertle)
 	division = { # "2a Caçadores de Angola"
 		division_name = {
 				is_name_ordered = yes

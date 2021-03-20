@@ -2,7 +2,11 @@ state={
 	id=878
 	name="STATE_878"
 	history={
+<<<<<<< HEAD
 		owner = BRD
+=======
+		owner = UNC
+>>>>>>> parent of 72dba55 (bunu revertle)
 		buildings = {
 			infrastructure = 1
 			2115 = {
@@ -12,7 +16,11 @@ state={
 		victory_points = {
 			2115 1 
 		}
+<<<<<<< HEAD
 		add_core_of = BRD
+=======
+		add_core_of = UNC
+>>>>>>> parent of 72dba55 (bunu revertle)
 	}
 	provinces={
 		2115 

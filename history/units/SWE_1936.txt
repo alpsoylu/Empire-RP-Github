@@ -207,6 +207,7 @@ units = {
 		start_equipment_factor = 1
 	}
 
+<<<<<<< HEAD
 	division = {
 		name =Arméfördelning
 		location = 310
@@ -222,6 +223,8 @@ units = {
 		start_equipment_factor = 1
 	}
 
+=======
+>>>>>>> parent of 72dba55 (bunu revertle)
 division = {
 		name =Arméfördelning
 		location = 3151
@@ -272,6 +275,7 @@ division = {
 
 division = {
 		name =Arméfördelning
+<<<<<<< HEAD
 		location = 9098
 		division_template = Arméfördelning
 		start_experience_factor = 0.3
@@ -280,6 +284,8 @@ division = {
 
 division = {
 		name =Arméfördelning
+=======
+>>>>>>> parent of 72dba55 (bunu revertle)
 		location = 11068
 		division_template = Arméfördelning
 		start_experience_factor = 0.3
@@ -326,6 +332,7 @@ division = {
 		start_equipment_factor = 1
 	}
 
+<<<<<<< HEAD
 division = {
 		name =Arméfördelning
 		location = 222
@@ -333,6 +340,8 @@ division = {
 		start_experience_factor = 0.3
 		start_equipment_factor = 1
 	}
+=======
+>>>>>>> parent of 72dba55 (bunu revertle)
 
 division = {
 		name =Arméfördelning

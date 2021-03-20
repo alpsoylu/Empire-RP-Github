@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ﻿division_template = {
 	name = "Infanterie Divisie"		# full Colonial Divisions (old equipment, low experience)
 
@@ -128,3 +129,6 @@ instant_effect = {
 }
 
 #################################
+=======
+﻿
+>>>>>>> parent of 72dba55 (bunu revertle)

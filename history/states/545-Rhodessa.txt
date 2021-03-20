@@ -4,7 +4,8 @@ state={
 	name="STATE_545"
 
 	history={
-		owner = ZIM
+		owner = UNC
+		add_core_of = UNC
 
 	}
 

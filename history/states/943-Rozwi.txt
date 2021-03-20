@@ -4,8 +4,13 @@ state={
 	name="STATE_943"
 
 	history={
+<<<<<<< HEAD
 		owner = BOT
 		add_core_of = BOT
+=======
+		owner = UNC
+		add_core_of = UNC
+>>>>>>> parent of 72dba55 (bunu revertle)
 	}
 
 	provinces={

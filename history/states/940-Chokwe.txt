@@ -4,8 +4,13 @@ state={
 	name="STATE_940"
 
 	history={
+<<<<<<< HEAD
 		owner = ZAM
 		add_core_of = ZAM
+=======
+		owner = UNC
+		add_core_of = UNC
+>>>>>>> parent of 72dba55 (bunu revertle)
 		buildings = {
 			infrastructure = 1
 

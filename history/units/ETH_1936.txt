@@ -126,7 +126,11 @@ units = {
 			is_name_ordered = yes
 			name_order = 10
 		}
+<<<<<<< HEAD
 		location = 5041
+=======
+		location = 1984
+>>>>>>> parent of 72dba55 (bunu revertle)
 		division_template = "Infantry Division"		# Militia
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.5
@@ -137,7 +141,11 @@ units = {
 			is_name_ordered = yes
 			name_order = 8
 		}
+<<<<<<< HEAD
 		location = 5041
+=======
+		location = 1984
+>>>>>>> parent of 72dba55 (bunu revertle)
 		division_template = "Infantry Division"		# Militia
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.5
@@ -148,6 +156,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 9
 		}
+<<<<<<< HEAD
 		location = 5041
 		division_template = "Infantry Division"		# Militia
 		start_experience_factor = 0.1
@@ -185,11 +194,15 @@ units = {
 			name_order = 13
 		}
 		location = 8062
+=======
+		location = 1984
+>>>>>>> parent of 72dba55 (bunu revertle)
 		division_template = "Infantry Division"		# Militia
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.5
 
 	}
+<<<<<<< HEAD
 	division = { # "1st Sidamo Sefari"
 		division_name = {
 			is_name_ordered = yes
@@ -212,6 +225,8 @@ units = {
 		start_equipment_factor = 0.7
 
 	}
+=======
+>>>>>>> parent of 72dba55 (bunu revertle)
 }
 
 

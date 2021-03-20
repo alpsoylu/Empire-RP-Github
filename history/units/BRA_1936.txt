@@ -32,6 +32,7 @@ division_template = {
 
 units = {
 	##### Exército Brasileiro #####
+<<<<<<< HEAD
 	division= {	# "1a Divisão de Infanteria"
 		division_name = {
 				is_name_ordered = yes
@@ -54,6 +55,8 @@ units = {
 		start_equipment_factor = 0.5
 
 	}
+=======
+>>>>>>> parent of 72dba55 (bunu revertle)
 	division= {	# "3a Divisão de Infanteria"
 		division_name = {
 				is_name_ordered = yes
@@ -70,6 +73,7 @@ units = {
 				is_name_ordered = yes
 				name_order = 4
 		}
+<<<<<<< HEAD
 		location = 5168 # Recife
 		division_template = "Divisão de Infanteria"
 		start_experience_factor = 0.1
@@ -82,11 +86,15 @@ units = {
 				name_order = 5
 		}
 		location = 8242 # Belo Horizonte
+=======
+		location = 10447 # Recife
+>>>>>>> parent of 72dba55 (bunu revertle)
 		division_template = "Divisão de Infanteria"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.5
 
 	}
+<<<<<<< HEAD
 	division= {	# "1a Divisão de Cavalaria"
 		division_name = {
 				is_name_ordered = yes
@@ -109,6 +117,8 @@ units = {
 		start_equipment_factor = 0.5
 
 	}
+=======
+>>>>>>> parent of 72dba55 (bunu revertle)
 }
 
 instant_effect = {

@@ -6,8 +6,13 @@ resources={
 	}
 
 	history={
+<<<<<<< HEAD
 		owner = UGA
 		add_core_of = UGA
+=======
+		owner = UNC
+		add_core_of = UNC
+>>>>>>> parent of 72dba55 (bunu revertle)
 		buildings = {
 			infrastructure = 1
 		}

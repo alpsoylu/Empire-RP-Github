@@ -33,6 +33,7 @@ division_template = {
 units = {
 	##### Ejército Mexicano #####
 
+<<<<<<< HEAD
 	division= {	# "2a División de Infantería"
 		division_name = {
 			is_name_ordered = yes
@@ -56,6 +57,9 @@ units = {
 		start_equipment_factor = 0.7
 		force_equipment_variants = { infantry_equipment_0 = { owner = "GER" } }
 	}
+=======
+
+>>>>>>> parent of 72dba55 (bunu revertle)
 
 	division = {
 		location = 1965 # Mexico City
@@ -73,6 +77,7 @@ units = {
 		force_equipment_variants = { infantry_equipment_0 = { owner = "GER" } }
 	}
 
+<<<<<<< HEAD
 	division = {
 		location = 2021
 		division_template = "Brigada Agrarista"
@@ -104,6 +109,8 @@ units = {
 		start_equipment_factor = 0.6
 		force_equipment_variants = { infantry_equipment_0 = { owner = "USA" } }
 	}
+=======
+>>>>>>> parent of 72dba55 (bunu revertle)
 
 
 instant_effect = {

@@ -6,10 +6,14 @@ state={
 	}
 	history={
 		owner = POR
+<<<<<<< HEAD
 		add_claim_by = RAJ
 		add_core_of = MYS
 		add_claim_by = MYS
 		add_claim_by = MAR
+=======
+		add_core_of = RAJ
+>>>>>>> parent of 72dba55 (bunu revertle)
 		buildings = {
 			infrastructure = 2
 		}

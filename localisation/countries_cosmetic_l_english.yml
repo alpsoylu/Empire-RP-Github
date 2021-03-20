@@ -716,3 +716,30 @@
  HOL_benelux_unified_democratic:0 "Benelux Federation"
  HOL_benelux_unified_democratic_DEF:0 "the Benelux Federation"
  HOL_benelux_unified_democratic_ADJ:0 "Benelux"
+<<<<<<< HEAD
+=======
+ BENELUX_FORMED:0 "Kingdom of United Benelux"
+ new_event.1:0 "United Provinces asks for the annexation of §RSouthern Netherlands§! in terms of an alliance"
+ new_event.1.t:0 "United Provinces asks for the annexation of §RSouthern Netherlands§! in terms of an alliance"
+ new_event.1.d:0 "the United Provinces asked for the annexation of §RSouthern Netherlands§! in terms of an alliance"
+ new_event.1.a:0 "Ok Let them have it"
+ new_event.1.b:0 "No!They can't have it"
+ new_event.2:0 "Spain Accepts"
+ new_event.2.t:0 "Spain Accepts"
+ new_event.2.d:0 "Spain Accepts our deal for the §RSouthern Netherlands§!"
+ new_event.2.a:0 "Gut!"
+ 
+ new_event.3:0 "Spain Rejects"
+ new_event.3.t:0 "Spain Rejects"
+ new_event.3.d:0 "Spain Rejects our deal for the §RSouthern Netherlands§!"
+ new_event.3.a:0 "Ok then"
+ new_event.3.b:0 "This means WAR!!!"
+ 
+ hol_invade_liege:0 "Invade Liege"
+ hol_join_france:0 "Join France"
+ hol_form_greater_benelux:0 "Form the Benelux Union"
+ hol_attack_spanish_netherlands:0 "Invade Spanish Netherlands"
+ GER_PRS_FORMED:0 "Deutsches Confederation"
+ GER_PRS_FORMED:0 "the Deutsches Confederation"
+ GER_PRS_FORMED_ADJ:0 "German"
+>>>>>>> parent of 72dba55 (bunu revertle)

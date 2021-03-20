@@ -3,9 +3,14 @@ state={
 	name="STATE_937"
 
 	history={
+<<<<<<< HEAD
 		add_core_of = RWA
 		owner = RWA
 		add_core_of = COG
+=======
+		add_core_of = UNC
+		owner = UNC
+>>>>>>> parent of 72dba55 (bunu revertle)
 		victory_points = {
 			10968 3
 		}

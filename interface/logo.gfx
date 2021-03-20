@@ -7,4 +7,11 @@ spriteTypes = {
     name = "GFX_select_date_1699"
     texturefile = "gfx/interface/select_date_1699.dds"
 	}
+<<<<<<< HEAD
+=======
+	spriteType = {
+		name = "GFX_autonomy_vilayet_icon"
+		textureFile = "gfx/interface/autonomy/autonomy_vilayet.dds"
+	}
+>>>>>>> parent of 72dba55 (bunu revertle)
 }

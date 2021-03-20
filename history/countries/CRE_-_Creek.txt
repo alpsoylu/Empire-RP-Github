@@ -7,6 +7,9 @@ set_research_slots = 1
 set_popularities  = {
 	aristocracy = 100
 }
+add_ideas = {
+disorganised_tribes
+}
 set_politics = {	
 	ruling_party = neutrality
 	last_election = "1936.1.1"

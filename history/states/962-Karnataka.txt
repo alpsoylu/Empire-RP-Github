@@ -5,6 +5,7 @@ state={
 
 	history={
 		owner = RAJ
+<<<<<<< HEAD
 		add_claim_by = RAJ
 		add_core_of = MAR
 		add_claim_by = MYS
@@ -13,6 +14,12 @@ state={
 		}
 		set_border_war = yes
 		set_demilitarized_zone = yes
+=======
+		add_core_of = RAJ
+		buildings = {
+			infrastructure = 3
+		}
+>>>>>>> parent of 72dba55 (bunu revertle)
 	}
 
 	provinces={

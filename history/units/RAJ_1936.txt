@@ -138,6 +138,7 @@ units = {
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.3
 	}
+<<<<<<< HEAD
 	division= {	# "Bombay District"
 		division_name = {
 			is_name_ordered = yes
@@ -158,6 +159,8 @@ units = {
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.3
 	}
+=======
+>>>>>>> parent of 72dba55 (bunu revertle)
 }
 
 ##### Starting Production #####

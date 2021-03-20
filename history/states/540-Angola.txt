@@ -7,8 +7,8 @@ state={
 	}
 
 	history={
-		owner = ANG
-		add_core_of = ANG
+		owner = UNC
+		add_core_of = UNC
 		
 		buildings = {
 			infrastructure = 2

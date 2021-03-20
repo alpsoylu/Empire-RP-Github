@@ -31,3 +31,11 @@ POL = {
 	color = rgb { 197 92 106 }
 	color_ui = rgb { 255 120 138 }
 }
+BENELUX_FORMED = {
+	color = rgb { 222 149 33 }
+	color_ui = rgb { 122 179 97 }
+}
+GER_PRS_FORMED = {
+	color = rgb { 96 96 96 }
+	color_ui = rgb { 96 96 96 }
+}

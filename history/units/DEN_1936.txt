@@ -78,6 +78,7 @@ units = {
 		start_equipment_factor = 0.9
 
 	}
+<<<<<<< HEAD
 	division = { 
 		name =   "2. Jyske Regiment"
 		location = 11251  # Sonderborg
@@ -86,6 +87,8 @@ units = {
 		start_equipment_factor = 0.9
 
 	}
+=======
+>>>>>>> parent of 72dba55 (bunu revertle)
 	division = {
 		name = "Gardehussar Regiment"
 		location = 6364  # Aarhus

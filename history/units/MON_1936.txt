@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ﻿division_template = {
 	name = "Morit Diviziin"			# Cavalry Division
 
@@ -117,3 +118,6 @@ instant_effect = {
 		efficiency = 100
 	}
 }
+=======
+﻿
+>>>>>>> parent of 72dba55 (bunu revertle)
