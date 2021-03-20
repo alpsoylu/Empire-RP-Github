@@ -78,14 +78,6 @@ units = {
 		start_equipment_factor = 0.9
 
 	}
-	division = { 
-		name =   "2. Jyske Regiment"
-		location = 11251  # Sonderborg
-		division_template = "Binær Regiment"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.9
-
-	}
 	division = {
 		name = "Gardehussar Regiment"
 		location = 6364  # Aarhus

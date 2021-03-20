@@ -14,13 +14,6 @@ set_technology = {
 	tech_mountaineers = 1
 }
 
-create_faction = "Imperial Free Cities"
-add_to_faction = ULM
-add_to_faction = AAC
-add_to_faction = HAM
-add_to_faction = LUB
-add_to_faction = NUR
-
 add_ideas = {
 	protestant
 	GER_imperial_free_city
