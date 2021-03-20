@@ -1,0 +1,23 @@
+state={
+	id=902
+	name="STATE_902"
+	manpower = 60000
+	state_category = rural
+	provinces={
+		332 11251 
+	}
+	history=
+	{
+		victory_points = {
+			11251 1 
+		}
+		owner = SHL
+		buildings = {
+			infrastructure = 8
+			industrial_complex = 1
+		}
+		add_core_of = DEN
+		add_core_of = SHL
+	}
+	buildings_max_level_factor=1.000
+}

@@ -1,0 +1,50 @@
+﻿l_english:
+ burghers_estate:0 "Burghers Interactions"
+ burghers_estate_desc:0 "This estate represents the urban population of your country such as Artisans, Merchants or others that reside inside city walls. Their traditional responsibility is to work to keep the economy going and in order to do so efficiently they expect to be granted special rights and privileges for themselves and the cities they represent."
+
+ nobility_estate:0 "Nobility Interactions"
+ nobility_estate_desc:0 "This estate represents the families of landed aristocrats in your country. Their privileges are guaranteed by old traditions and most have originally been won through performing great services to the state. Their traditional responsibility is to fight and protect the realm against outside dangers as well as help the ruler keep the peace."
+ 
+ clergy_estate:0 "Clergy Interactions"
+ clergy_estate_desc:0 "This estate represents the educated priests of your state religion. They have a long tradition of serving in the administration of your country and their traditional responsibility is to care for the spiritual well-being of it and your people. Over the centuries they have acquired both land properties and privileges from former rulers as well as pious individuals."
+ 
+ raise_additional_levies:0 "§RNobility§! - Raise additional Levies"
+ raise_additional_levies_desc:0 "We can never have enough manpower, and thus whe should raise more troops."
+
+ censorship:0 "§YClergy§! - Religious Censorship"
+ censorship_desc:0 "The church has always been a vital ally in keeping the masses in check. Whilst this causes stability, it also grants the clergy significant power over the people."
+ 
+ appoint_new_officers:0 "§RNobility§! - Appoint new officers"
+ appoint_new_officers_desc:0 ""
+ 
+ seek_support_for_war:0 "§RNobility§! - Seek War Support"
+ seek_support_for_war_desc:0 "The Nobility still wield significant power when it comes to military affairs. Their support for war is absolutely vital."
+ 
+ lobby_war_effort:0 "§CBurghers§! - Lobby with Merchants"
+ lobby_war_effort_desc:0 "If we are to expand our manufacturing, we will need the support of powerful burgher families."
+ 
+ appoint_new_admirals:0 "§CBurghers§! - Appoint naval officers"
+ appoint_new_admirals_desc:0 "For sure, we could learn a thing or two from our ever growing merchant class when it comes to sailing."
+ 
+ appoint_ministers:0 "§YClergy§! - Appoint Ministers"
+ appoint_ministers_desc:0 "The clergymen make excellent ministers. We should befriend them, so we can employ them for a cheaper price."
+
+ estate_interactions:0 "Estate Interactions"
+ estate_interactions_desc:0 "Estates are factions within the nation that influence domestic politics. Depending on their influence, they will be available for various interactions. The current estates influencing our country are:\n\n§C[ROOT.GetDemocraticParty]§! - influence: [?party_popularity@democratic|%G0]\n\n§Y[ROOT.GetFascistParty]§! - influence: [?party_popularity@fascism|%G0]\n\n§RNobility§! - influence: [?party_popularity@aristocracy|%G0]\n\nThe current influence of our ruling house is [?party_popularity@neutrality|%G0], representing the amount of absolutism we have. The higher the absolutism, the more political power we shall receive."
+
+ strenghten_absolutism:0 "Strenghten Absolutism"
+ attract_investors:0 "§CBurghers§! - Attract Investors"
+ usage_of_church_lands:0 "§YClergy§! - Usage of Church Lands"
+ lower_tax_burdens:0 "Lower Tax Burdens"
+ lower_tax_burdens_desc:0 "Life in general is quite hard for the common folk and peasantry. Lowering taxes will result in fewer income in the short term, but a more stable nation in the long term."
+ ship_construction_effort:0 "§CBurghers§! - Ship Building Effort"
+ national_crisis:0 "National Crisises"
+ national_crisis_desc:0 "A national crisis is a disaster which may hit your nation when the requirements are met. Preventing it should be on the top of the political agenda."
+ peasant_revolt_dummy:0 "Peasant Revolt"
+ peasant_revolt:0 "Peasant Revolt"
+ aristocratic_coup_dummy:0 "Aristocratic Coup"
+ aristocratic_coup:0 "Aristocratic Coup"
+ burgher_coup_dummy:0 "Plutocratic Coup"
+ burgher_coup:0 "Plutocratic Coup"
+ clergy_dominance_dummy:0 "Clergy Dominance"
+ clergy_dominance:0 "Clergy Dominance"
