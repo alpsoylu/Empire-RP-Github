@@ -2,11 +2,11 @@ state={
 	id=952
 	name="STATE_952"
 	history={
-		owner = UNC
+		owner = SUD
 		buildings = {
 			infrastructure = 1
 		}
-		add_core_of = UNC
+		add_core_of = SUD
 
 		victory_points = {
 			1914 10 
