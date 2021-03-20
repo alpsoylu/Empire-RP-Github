@@ -647,7 +647,7 @@ focus = {
 
 focus = {
 	id = TUR_sufism
-	icon = GFX_OTT_reform
+	icon = GFX_focus_unknown
 	x = 6
 	y = 4
 	cost = 10
@@ -657,83 +657,7 @@ focus = {
 
 	completion_reward = {
 		TUR_reduce_sick_man = yes
-	
-	if = {
-    limit = {
-        SAU {
-		has_autonomy_state = autonomy_vilayet
-		}
-    }   
-    annex_country = {
-    target = SAU
-    transfer_troops = yes
-}
-add_state_core = 679
-add_state_core = 976
-}
-
-if = {
-    limit = {
-        LBA {
-		has_autonomy_state = autonomy_vilayet
-		}
-    }   
-    annex_country = {
-    target = LBA
-    transfer_troops = yes
-}
-add_state_core = 451
-add_state_core = 663
-add_state_core = 450
-add_state_core = 662
-add_state_core = 449
-add_state_core = 661
-add_state_core = 448
-}
-
-if = {
-    limit = {
-        ALG {
-		has_autonomy_state = autonomy_vilayet
-		}
-    }   
-    annex_country = {
-    target = ALG
-    transfer_troops = yes
-}
-add_state_core = 459
-add_state_core = 460
-add_state_core = 922
-}
-
-if = {
-    limit = {
-        TUN {
-		has_autonomy_state = autonomy_vilayet
-		}
-    }   
-    annex_country = {
-    target = TUN
-    transfer_troops = yes
-}
-add_state_core = 458
-add_state_core = 665
-}
-
-if = {
-    limit = {
-        MOR {
-		has_autonomy_state = autonomy_vilayet
-		}
-    }   
-    annex_country = {
-    target = MOR
-    transfer_troops = yes
-}
-add_state_core = 462
-add_state_core = 461
-}
-
+		add_war_support = 0.10
 	}
 }
 
@@ -896,7 +820,7 @@ focus = {
 	y = 5
 	cost = 10
 	mutually_exclusive = { focus = TUR_islam_is_peace }
-	prerequisite = { focus = TUR_reinforce_the_khalifa focus = TUR_guide_the_sultan }
+	prerequisite = { focus = TUR_reinforce_the_khalifa }
 
 	available = {
 		has_civil_war = no

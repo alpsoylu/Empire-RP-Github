@@ -49,17 +49,17 @@ if = {
 	
 	set_autonomy = {
 		target = LBA
-		autonomous_state = autonomy_vilayet
+		autonomous_state = autonomy_dominion
 		freedom_level = 0.4
 	}
 	set_autonomy = {
 		target = TUN
-		autonomous_state = autonomy_vilayet
+		autonomous_state = autonomy_dominion
 		freedom_level = 0.4
 	}
 	set_autonomy = {
 		target = ALG
-		autonomous_state = autonomy_vilayet
+		autonomous_state = autonomy_dominion
 		freedom_level = 0.4
 	}
 	set_autonomy = {
@@ -69,7 +69,7 @@ if = {
 	}
 	set_autonomy = {
 		target = SAU
-		autonomous_state = autonomy_vilayet
+		autonomous_state = autonomy_dominion
 		freedom_level = 0.4
 	}
 
@@ -136,11 +136,11 @@ set_politics = {
 	elections_allowed = no
 }
 set_popularities = {
-	democratic = 12
-	neutrality = 57
-	aristocracy = 17
-	fascism = 14
-	communism = 0
+	democratic = 14
+	neutrality = 27
+	aristocracy = 39
+	fascism = 16
+	communism = 4
 }
 
 TUR = {
