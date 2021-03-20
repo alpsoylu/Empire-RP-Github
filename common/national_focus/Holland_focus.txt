@@ -424,28 +424,24 @@ focus_tree = {
 ###
 
 	focus = {
-		id = hol_attack_spanish_netherlands
+		id = hol_prepare_for_war
 		icon = GFX_goal_demand_sudetenland
 		prerequisite = { focus = hol_anti_french }
-		available = {  }
 		x = 12
 		y = 3
 		cost = 10
 
 		completion_reward = {
-		create_wargoal = {
-		    type = annex_everything
-		    target = BEL
-		}
+			add_war_support = .2
 		}
 	}
 
 	focus = {
 		id = hol_join_england
 		icon = GFX_focus_mex_restore_the_army_of_christ
-		prerequisite = {focus = hol_invade_liege }
+		prerequisite = { focus = hol_prepare_for_war }
 		x = 12
-		y = 5
+		y = 4
 		cost = 10
 
 		completion_reward = {
@@ -459,97 +455,12 @@ focus_tree = {
 		id = hol_strike_a_deal_for_the_low_countries
 		icon = GFX_focus_hol_united_netherlands
 		prerequisite = { focus = hol_reconcile_france }
-		available = {
-		AND {
-		FRA {
-		NOT {
-		has_war_with = SPR
-		}
-		}
-		}
-		
-		}
 		x = 10
 		y = 3
 		cost = 10
 
 		completion_reward = {
-		SPA = { country_event = { id = new_event.1 } }
-		}
-	}
-	
-	focus = {
-		id = hol_invade_liege
-		icon = GFX_goal_generic_forceful_treaty
-		prerequisite = { focus = hol_strike_a_deal_for_the_low_countries focus = hol_attack_spanish_netherlands }
-		available = {
-		owns_state = 8
-		owns_state = 6
-		owns_state = 34
-		owns_state = 793
-		controls_state = 8
-		controls_state = 6
-		controls_state = 34
-		controls_state = 793
-		}
-		x = 11
-		y = 4
-		cost = 10
-
-		completion_reward = {
-		AUS {
-		diplomatic_relation = {
-    country = LUI
-    relation = guarantee
-    active = no
-}
-		}
-		HOL { add_State_claim = 903 }
-		}
-	}
-	
-	focus = {
-		id = hol_join_france
-		icon = GFX_focus_hol_united_netherlands
-		prerequisite = { focus = hol_invade_liege }
-		available = {
-		}
-		x = 10
-		y = 5
-		cost = 10
-
-		completion_reward = {
-		FRA = { country_event = generic.2 }
-		}
-	}
-	
-	focus = {
-		id = hol_form_greater_benelux
-		icon = GFX_focus_hol_oranje_boven
-		prerequisite = { focus = hol_join_england focus = hol_join_france }
-		available = {
-		owns_state = 8
-		owns_state = 6
-		owns_state = 34
-		owns_state = 793
-		owns_state = 903
-		controls_state = 8
-		controls_state = 6
-		controls_state = 34
-		controls_state = 793
-		controls_state = 903
-		}
-		x = 11
-		y = 6
-		cost = 10
-
-		completion_reward = {
-		add_state_core = 8
-		add_state_core  = 6
-		add_state_core  = 34
-		add_state_core  = 793
-		add_state_core  = 903
-		set_cosmetic_tag = BENELUX_FORMED
+			custom_effect_tooltip = always_false
 		}
 	}
 
@@ -853,7 +764,7 @@ focus = {
 
 	available = {
 		NOT = { is_in_faction_with = ENG }
-		hhas_war_with = ENG
+		has_war = no
 	}
 	bypass = {
 		owns_state = 358

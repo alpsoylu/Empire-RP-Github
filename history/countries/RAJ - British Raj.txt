@@ -20,7 +20,6 @@ set_convoys = 20
 add_ideas = {
 	sunni
 	empire
-	disorganised_tribes
 }
 
 set_politics = {
@@ -46,4 +45,59 @@ create_country_leader = {
 	traits = {
 		
 	}
+}
+
+433 = {
+	start_resistance = yes
+	set_compliance = 5
+	set_resistance = 30
+	set_garrison_strength = 1.0
+}
+429 = {
+	start_resistance = yes
+	set_compliance = 5
+	set_resistance = 30
+	set_garrison_strength = 1.0
+}
+962 = {
+	start_resistance = yes
+	set_compliance = 5
+	set_resistance = 30
+	set_garrison_strength = 1.0
+}
+424 = {
+	start_resistance = yes
+	set_compliance = 5
+	set_resistance = 30
+	set_garrison_strength = 1.0
+}
+432 = {
+	start_resistance = yes
+	set_compliance = 5
+	set_resistance = 15
+	set_garrison_strength = 1.0
+}
+430 = {
+	start_resistance = yes
+	set_compliance = 5
+	set_resistance = 15
+	set_garrison_strength = 1.0
+}
+431 = {
+	start_resistance = yes
+	set_compliance = 5
+	set_resistance = 15
+	set_garrison_strength = 1.0
+}
+435 = {
+	start_resistance = yes
+	set_compliance = 5
+	set_resistance = 15
+	set_garrison_strength = 1.0
+}
+427 = {
+	start_resistance = yes
+	set_compliance = 5
+	set_resistance = 15
+	set_garrison_strength = 1.0
 }

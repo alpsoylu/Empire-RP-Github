@@ -10,7 +10,6 @@ set_technology = {
 add_ideas = {
 	buddhism
 	nomadic_society
-	disorganised_tribes
 }
 
 

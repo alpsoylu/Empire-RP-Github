@@ -4,8 +4,8 @@ state={
 	name="STATE_940"
 
 	history={
-		owner = UNC
-		add_core_of = UNC
+		owner = ZAM
+		add_core_of = ZAM
 		buildings = {
 			infrastructure = 1
 

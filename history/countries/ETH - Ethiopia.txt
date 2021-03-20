@@ -9,9 +9,9 @@ set_technology = {
 }
 
 set_convoys = 5
+
 add_ideas = {
 	orthodox
-	disorganised_tribes
 }
 
 1939.1.1 = {

@@ -93,6 +93,53 @@ country_event = {
 	}
 }
 
+country_event = {
+	id = ottomans.10
+	title = ottomans.10.t
+	desc = ottomans.10.d
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = { #join the rebellion
+		name = ottomans.10.a
+		set_politics = {
+			ruling_party = aristocracy
+		}
+		set_cosmetic_tag = TUR_jan
+		delete_unit_template_and_units = {
+		    division_template = "Janissar Tümeni"
+		}
+		set_capital = 879
+		start_civil_war = {
+		    ideology = neutrality
+		    size = 0.5
+		    capital = 341
+		    set_cosmetic_tag = TUR
+		    add_ideas = TUR_engulved_in_civil_war
+		    load_focus_tree = { tree = ottoman_focus keep_completed = yes }
+		}
+		add_ideas = TUR_engulved_in_civil_war
+		
+	}
+	option = { #stand with old order
+		name = ottomans.10.b
+		start_civil_war = {
+			size = 0.5
+			ideology = aristocracy
+			capital = 879
+			states = { 879 184 211 212 48 231 354 }
+			set_cosmetic_tag = TUR_jan
+			add_ideas = TUR_engulved_in_civil_war
+			load_focus_tree = { tree = ottoman_focus keep_completed = yes }
+		}
+		add_ideas = TUR_engulved_in_civil_war
+		delete_unit_template_and_units = {
+		    division_template = "Janissar Tümeni"
+		}
+		set_cosmetic_tag = TUR_jan
+	}
+}
 
 #ottomans demand morea
 

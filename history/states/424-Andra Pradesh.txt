@@ -5,12 +5,16 @@ state={
 
 	history={
 		owner = RAJ
-		add_core_of = RAJ
+		add_core_of = MAR
+		add_claim_by = MYS
+		add_claim_by = MDR
 		buildings = {
 			infrastructure = 4
 			industrial_complex = 1
 
 		}
+		set_border_war = yes
+		set_demilitarized_zone = yes
 
 	}
 
