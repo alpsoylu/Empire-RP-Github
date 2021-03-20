@@ -6,8 +6,8 @@ resources={
 	}
 
 	history={
-		owner = UGA
-		add_core_of = UGA
+		owner = UNC
+		add_core_of = UNC
 		buildings = {
 			infrastructure = 1
 		}

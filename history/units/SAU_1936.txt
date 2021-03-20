@@ -14,23 +14,12 @@
 units = {
 	##### Royal Saudi Army #####
 	division = {
-		#name = "Alfurqat Ar Riyad"
-		division_name = {    # New syntax for compatibility with name lists
-			is_name_ordered = yes
-			name_order = 1
-		}
-		location = 12727
-		division_template = "Alfurqat Almasha"	
-		start_equipment_factor = 0.3
-
-	}
-	division = {
 		#name = "Alfurqat Jiddah"
 		division_name = {    # New syntax for compatibility with name lists
 			is_name_ordered = yes
 			name_order = 2
 		}
-		location = 12883
+		location = 2033
 		division_template = "Alfurqat Almasha"
 		start_equipment_factor = 0.3
 

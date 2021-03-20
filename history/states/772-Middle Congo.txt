@@ -7,8 +7,8 @@ state={
 	}
 
 	history={
-		owner = GAB
-		add_core_of = GAB
+		owner = UNC
+		add_core_of = UNC
 		buildings = {
 			infrastructure = 1
 

@@ -138,26 +138,6 @@ units = {
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.3
 	}
-	division= {	# "Bombay District"
-		division_name = {
-			is_name_ordered = yes
-			name_order = 110
-		}
-		location = 1349
-		division_template = "District Garrison"
-		start_experience_factor = 0.1
-		start_equipment_factor = 0.3
-	}
-	division= {	# "Madras District"
-		division_name = {
-			is_name_ordered = yes
-			name_order = 111
-		}
-		location = 10278
-		division_template = "District Garrison"
-		start_experience_factor = 0.1
-		start_equipment_factor = 0.3
-	}
 }
 
 ##### Starting Production #####
