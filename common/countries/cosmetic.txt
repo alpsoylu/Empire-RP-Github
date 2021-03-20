@@ -1,0 +1,41 @@
+RUS_muscovy = {
+	color = rgb { 188 139 46}
+	color_ui = rgb { 188 139 46 }
+}
+TSC_SPR_subject = {
+	color = rgb { 229 182 4 }
+	color_ui = rgb { 229 182 4 }
+}
+TUR_jan = {
+   	color = rgb { 171 190 152 }
+	color_ui = rgb { 171 190 152 }
+}
+TUR = {
+	color = rgb { 169 17 1 }
+	color_ui = rgb { 169 17 1 }
+}
+GER_WESTFALEN = {
+	color = rgb { 240 230 134 }
+    color_ui = rgb { 240 230 134 }
+}
+
+GER_RHINE = {
+	color = rgb { 126 181 173 }
+    color_ui = rgb { 126 181 173  }
+}
+PPR = {
+	color = rgb { 250 141 141 }
+	color_ui = rgb { 250 141 141 }
+}
+POL = {
+	color = rgb { 197 92 106 }
+	color_ui = rgb { 255 120 138 }
+}
+BENELUX_FORMED = {
+	color = rgb { 222 149 33 }
+	color_ui = rgb { 122 179 97 }
+}
+GER_PRS_FORMED = {
+	color = rgb { 96 96 96 }
+	color_ui = rgb { 96 96 96 }
+}

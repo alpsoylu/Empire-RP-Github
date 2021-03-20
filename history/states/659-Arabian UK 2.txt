@@ -1,0 +1,25 @@
+
+state={
+	id=659
+	name="STATE_659"
+
+	history={
+		owner = UNC
+		victory_points = {
+			5074 1 
+		}
+		buildings = {
+			infrastructure = 3
+
+		}
+		add_core_of = UNC
+
+	}
+
+	provinces={
+		2029 4924 4976 5074 8000 12821 12894 13079 
+	}
+	manpower=391505
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+}

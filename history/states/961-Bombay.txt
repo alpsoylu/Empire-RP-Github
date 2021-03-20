@@ -1,0 +1,38 @@
+
+state={
+	id=961
+	name="STATE_961"
+
+	history={
+		owner = ENG
+		add_claim_by = RAJ
+		add_claim_by = MYS
+		add_claim_by = MAR
+		add_claim_by = MDR
+		buildings = {
+			infrastructure = 3
+			1349 = {
+				naval_base = 6
+
+			}
+			10278 = {
+				naval_base = 4
+
+			}
+		}
+		victory_points = {
+			1349 10 
+		}
+		victory_points = {
+			10278 1 
+		}
+
+	}
+
+	provinces={
+		1349 10278 12208 
+	}
+	manpower=120497
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

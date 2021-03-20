@@ -1,0 +1,25 @@
+
+state={
+	id=372
+	name="STATE_372"
+	resources={
+		aluminium=14.000
+	}
+
+	history={
+		buildings = {
+			infrastructure = 1
+		}
+		owner = QUE
+		add_core_of = QUE
+		add_core_of = LOU
+
+	}
+
+	provinces={
+		4567 4597 7485 7586 10477 12458 12489 12778 
+	}
+	manpower=185
+	buildings_max_level_factor=1.000
+	state_category=town
+}

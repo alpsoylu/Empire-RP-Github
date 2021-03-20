@@ -1,0 +1,187 @@
+ideas = {
+	country = {
+		SPR_fortify_the_empire_2 = {
+			picture = generic_fortify_the_borders
+
+			name = SPR_fortify_the_empire
+
+			modifier = {
+				production_speed_bunker_factor = 0.20
+				production_speed_coastal_bunker_factor = 0.20
+			}
+		}
+		SPR_fortify_the_empire_1 = {
+			picture = generic_fortify_the_borders
+
+			name = SPR_fortify_the_empire
+
+			modifier = {
+				production_speed_bunker_factor = 0.10
+				production_speed_coastal_bunker_factor = 0.10
+			}
+		}
+		SPR_large_treasure = {
+			picture = SPR_seize_the_gold_reserves
+
+			modifier = {
+				consumer_goods_factor = -0.30
+			}
+		}
+		SPR_medium_treasure = {
+			picture = SPR_seize_the_gold_reserves
+
+			modifier = {
+				consumer_goods_factor = -0.20
+			}
+		}
+		SPR_small_treasure = {
+			picture = SPR_seize_the_gold_reserves
+
+			modifier = {
+				consumer_goods_factor = -0.10
+			}
+		}
+		SPR_colonial_maintenance = {
+			picture = chi_hyper_inflation5
+
+			name = SPR_colonial_maintenance
+
+			modifier = {
+				consumer_goods_factor = 0.20
+				political_power_cost = 0.15
+				max_command_power = -50
+			}
+		}
+		SPR_colonial_maintenance_2 = {
+			picture = chi_hyper_inflation5
+
+			name = SPR_colonial_maintenance
+
+			modifier = {
+				consumer_goods_factor = 0.20
+				political_power_cost = 0.10
+				max_command_power = -25
+			}
+		}
+		SPR_colonial_maintenance_2a = {
+			picture = chi_hyper_inflation5
+
+			name = SPR_colonial_maintenance
+
+			modifier = {
+				consumer_goods_factor = 0.15
+			}
+		}
+		SPR_colonial_maintenance_2b = {
+			picture = chi_hyper_inflation5
+
+			name = SPR_colonial_maintenance
+
+			modifier = {
+				consumer_goods_factor = 0.175
+				political_power_cost = 0.05
+				max_command_power = -12.5
+			}
+		}
+		MEX_casta_system = {
+			picture = saf_history_of_segregation
+
+			modifier = {
+				recruitable_population_factor = -0.60
+				stability_factor = 0.3
+
+			}
+		}
+		cardinal_portocarrero = {
+			picture = cardinal_portocarrero
+
+			modifier = {
+				political_power_gain = 0.8
+			}
+		}
+		maria_anna = {
+			picture = maria_anna
+
+			modifier = {
+				political_power_gain = 0.5
+			}
+		}
+		disfunctional_economy = {
+			picture = usa_great_depression_2
+
+			modifier = {
+				consumer_goods_factor = 0.15
+				production_speed_buildings_factor = -0.25
+				industrial_capacity_factory = -0.2
+			}
+		}
+
+		SPR_economic_recovery = {
+			picture = usa_great_depression_1
+
+			modifier = {
+				consumer_goods_factor = 0.20
+				production_speed_buildings_factor = -0.25
+				industrial_capacity_factory = -0.1
+			}
+		}
+
+		SPR_mestas = {
+			picture = usa_great_depression_1
+
+			modifier = {
+				production_factory_max_efficiency_factor = 0.1
+				production_factory_efficiency_gain_factor = 0.05
+			}
+		}
+
+
+
+	}
+
+	political_advisor = {
+		SPR_pontcarrero = {
+
+			picture = cardinal_portocarrero
+
+			cost = 50
+			
+			allowed = {
+				original_tag = SPR
+			}
+			available = {
+				has_completed_focus = SPR_pontcarrero_place_in_adm
+				original_tag = SPR
+			}
+			
+			traits = { genial_anti_revolutionary }
+
+		}
+
+		SPR_captain_of_industry = {
+
+			picture = trader
+				
+			allowed = {
+				original_tag = SPR
+			}
+			
+			traits = { captain_of_industry }
+		}
+
+		SPR_backroom_backstabber = {
+
+			picture = spymaster
+
+			allowed = {
+				original_tag = SPR
+			}
+			
+			traits = { backroom_backstabber }
+			ai_will_do = {
+				factor = 0
+			}
+		}
+
+	}
+}

@@ -1,0 +1,38 @@
+
+state={
+	id=936
+	name="STATE_936"
+	resources={
+		rubber=3.000
+	}
+
+	history={
+		owner = UNC
+		add_core_of = UNC
+		victory_points = {
+			12925 10 
+		}
+		victory_points = {
+			7548 1 
+		}
+		victory_points = {
+			10025 1 
+		}
+		victory_points = {
+			12896 1 
+		}
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+
+		}
+
+	}
+
+	provinces={
+		5117 8193 8219 10025 12925 12945 
+	}
+	manpower=848847
+	buildings_max_level_factor=1.000
+	state_category=town
+}

@@ -1,0 +1,48 @@
+﻿capital = 357
+
+oob = "BritishAmerica_1936"
+
+#set_naval_oob = "USA_1936_naval_legacy"
+
+set_research_slots = 4
+set_stability = 0.5
+set_war_support = 0.2
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_recon = 1
+	tech_support = 1		
+	tech_engineers = 1
+	gw_artillery = 1
+	gwtank = 1
+}
+
+set_convoys = 30
+
+set_politics = {
+	ruling_party = democratic
+	last_election = "1932.11.8"
+	election_frequency = 48
+	elections_allowed = no
+}
+set_popularities = {
+	democratic = 67
+	neutrality = 13
+	fascism = 20
+}
+add_ideas = {
+colonial_immigration
+protestant
+USA_largely_male_population
+USA_indentured_servants
+}
+
+create_country_leader = {
+	name = "William Penn"
+	desc = ""
+	picture = "William_Penn.dds"
+	expire = "1702.3.8"
+	ideology = liberalism
+}
