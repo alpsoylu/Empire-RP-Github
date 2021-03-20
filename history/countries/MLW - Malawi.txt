@@ -6,9 +6,6 @@ set_technology = {
 }
 
 set_convoys = 0
-add_ideas = {
-disorganised_tribes
-}
 
 1939.1.1 = {
 	

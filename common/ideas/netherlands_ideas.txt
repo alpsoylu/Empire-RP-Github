@@ -14,19 +14,7 @@ ideas = {
 				consumer_goods_factor = -0.05
 			}
 		}
-		HOL_daj_ist_indiys = {
-			allowed = {
-				always = yes
-			}
 
-			removal_cost = -1
-
-			picture = generic_foreign_capital
-			
-			modifier = {
-				extra_trade_to_overlord_factor = 0.3
-			}
-		}
 		HOL_voc_funding2 = {
 			allowed = {
 				always = no

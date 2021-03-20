@@ -4,10 +4,11 @@ RUS_army_reform = {
 		icon = generic_prepare_civil_war
 
 		available = {
-			has_completed_focus = RUS_great_reforms_military_reform
+			has_army_experience > 49
+			has_completed_focus = RUS_army_reform
 		}
 
-		cost = 50
+		cost = 0
 		ai_will_do = {
 			factor = 500
 		}
@@ -25,7 +26,8 @@ RUS_army_reform = {
 		remove_effect = {
 			RUS_lower_purge_effects = yes
 		}
-		complete_effect = {						
+		complete_effect = {
+			army_experience = -50						
 		}		
 	}
 }

@@ -3,9 +3,7 @@
 # Starting tech
 
 set_research_slots = 2
-add_ideas = {
-disorganised_tribes
-}
+
 
 1939.1.1 = {
 

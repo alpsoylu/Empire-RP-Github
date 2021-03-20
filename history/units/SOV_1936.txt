@@ -271,6 +271,27 @@ units = {
 #Border Ottomans
 
 	division= {
+		name = "Regular Regiment"
+		location = 453
+		division_template = "Regular Regiment"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.7
+	}
+	division= {
+		name = "Conscript Regiment"
+		location = 486
+		division_template = "Conscript Regiment"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.7
+	}
+	division= {
+		name = "Conscript Regiment"
+		location = 486
+		division_template = "Conscript Regiment"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.7
+	}
+	division= {
 		name = "Cossack Regiment"
 		location = 3466
 		division_template = "Cossack Regiment"

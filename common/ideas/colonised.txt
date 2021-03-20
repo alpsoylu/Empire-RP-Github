@@ -10,13 +10,6 @@ ideas = {
 
 			removal_cost = -1
 			
-			cancel = {
-				OR {
-				has_war = yes
-				is_ai = no
-				}
-			}
-			
 			modifier = {
 				consumer_goods_factor = 15
 				research_speed_factor = -1
