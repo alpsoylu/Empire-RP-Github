@@ -12,7 +12,6 @@ country_event = {
 	option = {
 		name = russia.1.a
 		add_political_power = -10
-		transfer_state = 218
 	}
 	option = {
 		name = russia.1.b

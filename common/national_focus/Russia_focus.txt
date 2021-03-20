@@ -1287,6 +1287,10 @@ focus = {
 		TUR = { has_war = yes }
 	}
 	completion_reward = {
+		transfer_state = 227
+		transfer_state = 200
+		transfer_state = 196
+		transfer_state = 137
 		transfer_state = 234
 		TUR = {country_event = russia.1 }	
 	}
@@ -2751,7 +2755,7 @@ focus = {
 	icon =  GFX_goal_generic_army_doctrines
 	x = 0
 	y = 1
-	cost = 5
+	cost = 10
 	prerequisite = { focus = RUS_great_reforms_of_Peter }
 
 	search_filters = { FOCUS_FILTER_RESEARCH }
@@ -2761,25 +2765,6 @@ focus = {
 	}
 	
 	completion_reward = {
-	unlock_decision_category_tooltip = RUS_army_reform
-	}
-}
-
-focus = {
-	id = RUS_army_reform
-	icon = GFX_goal_generic_axis_build_infantry
-	prerequisite = { focus = RUS_great_reforms_military_reform }
-	x = 0
-	y = 1
-	cost = 5
-	relative_position_id = RUS_great_reforms_military_reform
-
-	ai_will_do = { 
-		factor = 90
-	}
-
-	completion_reward = {
-		army_experience = 10
 		add_tech_bonus = {
 			name = infantry_artillery_bonus
 			bonus = 1.0
@@ -2791,11 +2776,30 @@ focus = {
 }
 
 focus = {
+	id = RUS_army_reform
+	icon = GFX_goal_generic_axis_build_infantry
+	prerequisite = { focus = RUS_great_reforms_military_reform }
+	x = 0
+	y = 1
+	cost = 10
+	relative_position_id = RUS_great_reforms_military_reform
+
+	ai_will_do = { 
+		factor = 90
+	}
+
+	completion_reward = {
+		unlock_decision_category_tooltip = CHI_army_reform
+		army_experience = 10
+	}
+}
+
+focus = {
 	id = RUS_reform_high_command
 	icon =  GFX_goal_generic_army_doctrines
 	x = 0
 	y = 2
-	cost = 5
+	cost = 10
 	prerequisite = { focus = RUS_army_reform }
 	relative_position_id = RUS_great_reforms_military_reform
 
@@ -2817,7 +2821,7 @@ focus = {
 	icon =  GFX_goal_generic_small_arms
 	x = -2
 	y = 2
-	cost = 5
+	cost = 10
 	prerequisite = { focus = RUS_army_reform }
 	relative_position_id = RUS_great_reforms_military_reform
 
@@ -2833,7 +2837,7 @@ focus = {
 	x = 2
 	y = 1
 	relative_position_id = RUS_great_reforms_military_reform
-	cost = 5
+	cost = 10
 
 	available = { 
 		has_war = yes 
@@ -2853,7 +2857,7 @@ focus = {
 	x = 2
 	y = 2
 	relative_position_id = RUS_great_reforms_military_reform
-	cost = 5
+	cost = 10
 
 	available = { has_war = yes }
 
@@ -2867,7 +2871,7 @@ focus = {
 	icon =  GFX_goal_generic_axis_build_infantry
 	x = -3
 	y = 3
-	cost = 5
+	cost = 10
 	prerequisite = { focus = RUS_reform_high_command }
 	relative_position_id = RUS_great_reforms_military_reform
 	mutually_exclusive = { focus = RUS_army_of_defense }
@@ -2882,7 +2886,7 @@ focus = {
 	icon =  GFX_goal_generic_axis_build_infantry
 	x = -1
 	y = 3
-	cost = 5
+	cost = 10
 	prerequisite = { focus = RUS_reform_high_command }
 	relative_position_id = RUS_great_reforms_military_reform
 	mutually_exclusive = { focus = RUS_army_of_offense }

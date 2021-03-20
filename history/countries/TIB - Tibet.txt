@@ -9,7 +9,6 @@ set_technology = {
 
 add_ideas = {
 	buddhism
-	disorganised_tribes
 }
 
 1939.1.1 = {

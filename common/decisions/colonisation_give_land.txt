@@ -33,6 +33,17 @@ colonisation = {
 						
 						
 					}
+					0 = {
+						
+					
+						ROOT = {country_event = {
+							id = colonisation.2
+							days = colonise_time
+						#	random = 10
+							
+						}}
+						
+					}
 				}
 				}
 				IF = {

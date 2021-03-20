@@ -15,9 +15,7 @@ set_technology = {
 	radio = 1
 	radio_detection = 1
 }
-add_ideas = {
-	disorganised_tribes
-}
+
 if = {
 	limit = {
 		not = { has_dlc = "Man the Guns" }

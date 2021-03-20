@@ -50,6 +50,10 @@ diplomatic_relation = {
 		relation = puppet
 }
 
+diplomatic_relation = {
+		country = SAX
+		relation = puppet
+}
 
 POL = {
 	add_opinion_modifier = { target = SWE modifier = Rivalry }
