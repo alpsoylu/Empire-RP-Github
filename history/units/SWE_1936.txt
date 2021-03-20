@@ -207,21 +207,6 @@ units = {
 		start_equipment_factor = 1
 	}
 
-	division = {
-		name =Arméfördelning
-		location = 310
-		division_template = Arméfördelning
-		start_experience_factor = 0.3
-		start_equipment_factor = 1
-	}
-	division = {
-		name =Arméfördelning
-		location = 319
-		division_template = Arméfördelning
-		start_experience_factor = 0.3
-		start_equipment_factor = 1
-	}
-
 division = {
 		name =Arméfördelning
 		location = 3151
@@ -265,14 +250,6 @@ division = {
 division = {
 		name =Arméfördelning
 		location = 11156
-		division_template = Arméfördelning
-		start_experience_factor = 0.3
-		start_equipment_factor = 1
-	}
-
-division = {
-		name =Arméfördelning
-		location = 9098
 		division_template = Arméfördelning
 		start_experience_factor = 0.3
 		start_equipment_factor = 1
@@ -326,13 +303,6 @@ division = {
 		start_equipment_factor = 1
 	}
 
-division = {
-		name =Arméfördelning
-		location = 222
-		division_template = Arméfördelning
-		start_experience_factor = 0.3
-		start_equipment_factor = 1
-	}
 
 division = {
 		name =Arméfördelning

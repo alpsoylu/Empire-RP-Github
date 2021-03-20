@@ -5,14 +5,10 @@ state={
 
 	history={
 		owner = RAJ
-		add_claim_by = RAJ
-		add_core_of = MAR
-		add_claim_by = MYS
+		add_core_of = RAJ
 		buildings = {
 			infrastructure = 3
 		}
-		set_border_war = yes
-		set_demilitarized_zone = yes
 	}
 
 	provinces={

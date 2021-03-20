@@ -46,7 +46,7 @@ on_actions  = {
 
 			every_country = {
 				set_variable = {
-					colonise_time = 150
+					colonise_time = 100
 				}
 			}
 		}

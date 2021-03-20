@@ -10,6 +10,7 @@ set_technology = {
 
 add_ideas = {
 	vajrayana
+	disorganised_tribes
 }
 
 set_war_support = 0.1

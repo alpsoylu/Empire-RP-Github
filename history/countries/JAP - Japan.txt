@@ -9,6 +9,7 @@ add_ideas = {
 	shinto
 	closed_economy
 	extensive_conscription
+	disorganised_tribes
 }
 
 set_research_slots = 2

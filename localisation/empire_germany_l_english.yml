@@ -267,6 +267,24 @@ GER_hanze_communism_ADJ:0 "Hanzeatic"
 
 
 
+
+
+
+
+#new stuff
+deutsches_confederation:0 "Deutsches Confederation"
+new_event.4:0 "Prussia Requests Swedish Pomerelia for a non aggresion pact"
+new_event.4.t:0 "Prussia Requests Swedish Pomerelia for a non aggresion pact"
+new_event.4.d:0 "Prussia Requests Swedish Pomerelia for a non aggresion pact"
+new_event.4.a:0 "Ok.They can have it"
+new_event.4.b:0 "NO.They can't have it"
+PRS_officialy_leave_hre:0 "Officialy Leave the Holy Roman Empire"
+PRS_form_the_deutsches_confederation:0 "Form the Deutsches Confederation"
+PRS_offer_alliance_to_mecklenburg:0 "Offer Alliance to Meckelnburg"
+PRS_offer_alliance_to_saxony:0 "Offer Alliance to Saxony"
+PRS_offer_alliance_to_anhalt:0 "Offer Alliance to Anhalt"
+PRS_expand_the_german_confederation:0 "Expand the German Confederation"
+
 #tooltips
 
 PRS_random_neighbour:0 "We will gain a §Yconquest wargoal§! against a random neighbouring imperial prince."
