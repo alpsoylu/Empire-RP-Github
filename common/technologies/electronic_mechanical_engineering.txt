@@ -833,7 +833,7 @@ OR = { has_country_flag = ai_want_colonise original_tag = ENG original_tag = FRA
 		
 		on_research_complete = {
 			set_variable = {
-				colonise_time = 25
+				colonise_time = 50
 			}
 			custom_effect_tooltip = more_colonies3_tooltip
 		}

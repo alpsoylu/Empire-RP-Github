@@ -1,0 +1,40 @@
+﻿l_english:
+  pd_pay_war_reparations:0 "Paying war reparations to [From.GetNameDef]"
+  
+  OFFER_PEACE_DEAL_TITLE:0 "Offer peace deal"
+  OFFER_PEACE_DEAL_DESC:0 "Offer a peace deal to the country. Only proposals within our war score can be sent (current war score: [?Root.vp@PREV|Y0] £victory_points )"
+  OFFER_PEACE_DEAL_ACTION_DESC:0 "Offer a peace deal to the country. We can offer proposal based on our war score."
+  PD_TAKE:0 "Take state"
+  PD_PUPPET:0 "Give to puppet state"
+  PD_DEMILITARIZE:0 "Demilitarize"
+  PD_LIBERATE:0 "Liberate / Return"
+  PD_WAR_REPERATIONS:0 "War reparations [?Root.pd_wr_cost|Y0] £victory_points"
+  PD_DISARM:0 "Disarm nation [?Root.pd_disarm_cost|Y0] £victory_points"
+  TOTAL_COST:0 "Total cost: [?Root.pd_total_cost|Y0] £victory_points"
+  
+  PD_OFFER_PEACE_DEAL_RECEIVE:0 "§Y[Root.GetName]§! has offered us the following peace deal proposal:"
+  PD_TAKE_STATES_DESC:0 "§Y[Root.GetName]§! §Rwill take the following states:§!"
+  PD_PUPPET_STATES_DESC:0 "§Y[Root.GetName]§! §Rwill puppet the following states:§!"
+  PD_DEMILITARIZE_STATES_DESC:0 "§RWe will demilitarize the following states:§!"
+  PD_LIBERATE_STATES_DESC:0 "§RWe will return/liberate the following states:§!"
+  PD_REPERATIONS_DESC:0 "§RWe will pay war reperations to§! §Y[Root.GetName]§!"
+  PD_DISARM_DESC:0 "§RWe will disarm our nation§!"
+  PD_STATE_LIST_ENTRY:0 "§R[This.GetName]§!"
+  
+  pd_state_cost_value:0 "[This.GetName] [?pts|Y0] £victory_points"
+  pd_state_refund_value:0 "[This.GetName] [?pts|G0] £victory_points"
+
+  pd_ai_will_accept_yes:0 "§YThey will accept§!"
+  pd_ai_will_accept_no:0 "§YThey will NOT accept§!"
+  
+  pd_waiting_response:0 "Awaiting response"
+  
+  base_reluctance:0 "Base reluctance"
+  close_to_surrender:0 "Close to surrender" 
+  war_support:0 "War support" 
+  stability:0 "Stability"
+  relative_war_score:0 "Relative war score"
+  strength_ratio:0 "Strength ratio"
+  is_major:0 "Major country"
+  in_faction:0 "In faction"
+  geopolitical_situation:0 "Geopolitical situation"

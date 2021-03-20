@@ -6,10 +6,7 @@ state={
 	}
 	history={
 		owner = POR
-		add_claim_by = RAJ
-		add_core_of = MYS
-		add_claim_by = MYS
-		add_claim_by = MAR
+		add_core_of = RAJ
 		buildings = {
 			infrastructure = 2
 		}
