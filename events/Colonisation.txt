@@ -20,7 +20,6 @@ country_event = {
 		}
 	}
 }
-#FAIL
 country_event = {
 	id = colonisation.2
 	title = colonisation.2.t
@@ -51,7 +50,6 @@ country_event = {
 		}
 	}
 }
-#OLDU
 country_event = {
 	id = colonisation.3
 	title = colonisation.3.t

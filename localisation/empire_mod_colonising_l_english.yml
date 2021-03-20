@@ -1,5 +1,5 @@
 ﻿l_english:
-COLONISE_STATE_TOOLTIP:0 "§YColonise this State§!\n Colonising costal states costs §R10 §!§YDucats §!and §R1000§! §YManpower.§!\n Colonising landlocked states costs §R20 §!§YDucats §!and §R1000§! §YManpower.§!"
+COLONISE_STATE_TOOLTIP:0 "§YColonise this State§!\n Colonising costal states costs §R50 §!§YPolitical Power §!and §R1000§! §YManpower.§!\n Colonising landlocked states costs §R100 §!§YPolitical Power §!and §R1000§! §YManpower.§!"
 colonisation.3.t:0 "Colonisation results!"
 colonisation.3.d:0 "We successfully colonised the state we were trying to colonise"
 colonisation.1.a:0 "Good!"

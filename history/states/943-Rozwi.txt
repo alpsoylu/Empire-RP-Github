@@ -4,8 +4,8 @@ state={
 	name="STATE_943"
 
 	history={
-		owner = UNC
-		add_core_of = UNC
+		owner = BOT
+		add_core_of = BOT
 	}
 
 	provinces={
