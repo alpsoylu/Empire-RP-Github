@@ -16,6 +16,7 @@ add_ideas = {
 	limited_exports
 	limited_conscription
 	isolationism_idea
+	disorganised_tribes
 }
 
 create_faction = "The Chinese Empire"

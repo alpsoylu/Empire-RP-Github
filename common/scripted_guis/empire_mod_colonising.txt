@@ -201,7 +201,7 @@ scripted_gui = {
 		#					}
 		#					
 		#				}
-		#				ROOT = {add_political_power = -50}
+		#				ROOT = {add_to_variable = { money = -10}}
 		#			}
 		#			IF = {	
 		#				limit = {is_coastal = no}
@@ -227,13 +227,13 @@ scripted_gui = {
 							limit = {
 								is_coastal = no
 							}
-							ROOT = {add_political_power = -100}
+							ROOT = {add_to_variable = { money = -20}}
 						}
 						IF = {
 							limit = {
 								is_coastal = yes
 							}
-							ROOT = {add_political_power = -50}
+							ROOT = {add_to_variable = { money = -10}}
 						}
 						ROOT = {
 							add_manpower = -1000
@@ -248,7 +248,7 @@ scripted_gui = {
 		triggers = {
 			colonise_state_click_enabled = {
 				
-					ROOT = {has_political_power > 50}
+					ROOT = {check_variable = {money > 10}}
 				
 				check_variable = { ROOT.manpower > 1000 }
 				ROOT = {
@@ -275,9 +275,7 @@ scripted_gui = {
 		ai_check = {
 			
 			
-				ROOT = {
-					check_variable = { ROOT.political_power > 99.99 }
-				}
+				ROOT = {check_variable = {money > 20}}
 			NOT = {
 				ROOT = {
 					has_idea = currently_colonising
@@ -308,16 +306,12 @@ scripted_gui = {
 				ai_will_do = {
 					factor = -4
 				modifier = {
-					ROOT = {
-					has_political_power > 100
-					}
+					ROOT = {check_variable = {money > 20}}
 					add = 5
 				
 				}
 				modifier = {
-					ROOT = {
-					has_political_power > 100
-					}
+					ROOT = {check_variable = {money > 20}}
 					any_neighbor_state = {
 						any_country = {
 							OR = {
@@ -333,9 +327,7 @@ scripted_gui = {
 				
 				} 
 				modifier = {
-					ROOT = {
-					has_political_power > 100
-					}
+					ROOT = {check_variable = {money > 20}}
 					OR = {
 						check_variable = {
 							colonial_area = INS

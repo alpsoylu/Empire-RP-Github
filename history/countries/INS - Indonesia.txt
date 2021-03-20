@@ -6,6 +6,7 @@ set_research_slots = 2
 
 add_ideas = {
 	protestant
+	HOL_daj_ist_indiys
 }
 
 # Starting tech

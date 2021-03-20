@@ -1,0 +1,29 @@
+idea_categories = {
+
+	government_policies = {
+		slot = mass_media
+		slot = population
+		slot = equality
+		slot = war_bonds
+		slot = nationalization
+		slot = finances
+		
+		cost = 0
+		removal_cost = 0
+	
+	}
+	
+	army_policies = {
+		slot = doctrine_army
+		slot = conscription_type
+		slot = soldier_training
+		slot = officer_training
+		slot = spec_ops
+		slot = convention
+		
+		cost = 0
+		removal_cost = 0
+	
+	}
+	
+}
